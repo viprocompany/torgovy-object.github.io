@@ -92,19 +92,57 @@
 								</div>
 							</div>
 							<div class="card">
-								<div class="card-header" id="headingoFour">
+								<div class="card-header" id="headingFour">
 									<h5>
 										<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Читать инструкцию</button>
 									</h5>
 								</div>
 								<div class="collapse" id="collapseFour" aria-labelledby="headingFour" data-parent="#accordion">
-									<div class="card-body">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt fugit facilis vel quas praesentium adipisci vero dolor magnam nostrum tenetur nam, eaque officiis ratione eligendi harum fugiat voluptatem minima et?</p>
+								 <div class="card-body">								
+	 						       <div data-spy="scroll" data-target="#navbar2"  
+	 								style="position:relative; height:800px; overflow: auto;">	
+									 <nav id="navbar2" class="navbar navbar-light bg-light">
+	 									<a class="navbar-brand" href="#">Navbar</a>
+	 									<ul class="nav nav-pills">
+	 										<li class="nav-item">
+	 											<a class="nav-link" href="#fat">@fat</a>
+	 										</li>
+	 										<li class="nav-item">
+	 											<a class="nav-link" href="#mdo">@mdo</a>
+	 										</li>
+	 										<li class="nav-item dropdown">
+	 											<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" >Dropdown</a>
+	 											<div class="dropdown-menu">
+	 												<a class="dropdown-item" href="#one">one</a>
+	 												<a class="dropdown-item" href="#two">two</a>
+	 												<div role="separator" class="dropdown-divider"></div>
+	 												<a class="dropdown-item" href="#three">three</a>
+	 											</div>
+	 										</li>
+	 									</ul>
+	 								</nav>
+                                     <div id="text">	
+                                     <h4 id="fat">@fat</h4> 									
+	 								<p>Для вызова программы нужно дважды кликнуть файл WpfAppTO.exe из папки, после чего произойдёт загрузка программы. Программа загружается с чистыми незаполненными информацией элементами для её отображения (рис. 10). В строке состояния выводятся текущие дата и время. Программа должна находится на ПК с установленными операционной системой Windows XP и выше, и пакета Microsoft Office 2007 или моложе  с установленным приложением Access.</p>								
+	 								<p>	При первоначальном запуске приложения ввод данных желательно  начать с таблицы «Товар»,  при этом ,если в данную таблицу ранее вводились данные, то после нажатия кнопки «БАЗА» они будут отображены в окне  в левой верхней части интерфейса .Также заполнение базы данных можно начать с  таблиц «Платежи», «Поставщик» или «Курс_валют».</p> 
+	 								<h4 id="mdo">@mdo</h4> 
+	 								<p>	Для заполнения таблицы «Продажи» нужно сначала заполнить таблицу «Поставки», а перед этим таблицы «Поставщик» , «Курс_валют» и «Товар».</p>	
+	 								<h4 id="one">one</h4>
+	 								<p>Рисунок 3.24 – Предупреждающее сообщение-подсказка</p>
+	 								<p>	Рисунок 3.25 – Сообщение о благополучном выполнении команды в таблицу «Продажи»</p>                          
+	 								<h4 id="two">two</h4>
+	 								<p>При благополучном изменении  данных формируется сообщение о добавление или обновлении записи (рисунок 3.27).</p>	 								
 									</div>
+									
+	 						       </div>	 						      
+	 					        	 
+	 				             
+										
 								</div>
-							</div>
-						</div>
+							  </div>
+						   </div>
 					</div>
+				</div>
 				</div>
 				<!-- карусель  сзатуханием, которое  работает в  bootstra 4.2-->
 				<div id="sliderFade" class="carousel slide carousel-fade Fade   " data-ride="carousel">
@@ -237,198 +275,3 @@
 <script src="js/script.js"></script>
 </body>
 </html>
-<!-- 
-               <div class="card">
-	 						<div class="card-header" id="headingZero">
-	 							<h5>
-	 								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">Коротко о программе</button>
-	 							</h5>
-	 						</div>
-	 						<div class="collapse show" id="collapseZero" aria-labelledby="headingZero" data-parent="#accordion">
-	 							<div class="card-body">
-	 								<p>Данная программа является абсолютно бесплатной и предназначена для использования в торговле товаром, кроме товаров количество которых 	вводится числами с запятой(весовых и мерных товаров).</p>
-	 								<p>Анализ наценки и доходности по каждой группе ,модели , производителю, поставщику и другим критериям отбора товара, переучёт как в единицах товара так и в денежном выражении как в нацианольной так и в иностранной валюте, прибыль, рентабельность.</p>
-	 								<p>  В приложении есть минимальная заполненная база данных для проверки работоспособности и обучения работе с программой.  </p> 								 	
-	 							</div>
-	 						</div>
-	 				</div>			
-	 				<div class="card">
-	 						<div class="card-header" id="headingOne">
-	 							<h5>
-	 								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Требования к установке программы</button>
-	 							</h5>
-	 						</div>
-	 						<div class="collapse " id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
-	 							<div class="card-body">
-	 								<p> Данный проект создан для работы при условии , что на вашем компьютере установлено програмное обеспечение Майкрософт Офис  2007 или более новая версия и компонент этой программы  Access.</p>
-	 								<p>	Запускается файлом WpfAppTO.exe из каталога без установки, после копирования всей папки "torgovy_object_2019_релиз" из архива в любое удобное место на компьютере. </p>
-	 								<p>	Размер распакованного приложения 8 МБ + 7МБ файл для заполнения новой базы. Размер запакованного архива для скачивания 9,5МБ. Пароль для входа в программу в файле "пароль". 
-	 								</p>
-	 							</div>
-	 						</div>
-	 				</div>	 				
-
-	 			  <div class="card">
-	 						<div class="card-header" id="headingTwo">
-	 							<h5>
-	 								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Смотреть видеоуроки</button>
-	 							</h5>
-	 						</div>
-	 						<div class="collapse"  id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
-	 							<div class="card-body">
-	 								<div id="videoForm">			  
-	 									<div id="ytoube">
-	 										<p>Обзор фунций программы</p>								
-	 										<iframe width="560" height="315" src="https://www.youtube.com/embed/kN8liydVVYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	 										<p>Заполнение базы с нуля</p>
-	 										<iframe width="560" height="315" src="https://www.youtube.com/embed/yNcca0Ic8Uw"></iframe>
-	 									</div>		
-	 								</div>
-	 							</div>
-	 						</div>
-	 				</div>
-	 				<div class="card">
-	 					<div class="card-header" id="headingThree">
-	 							<h5>
-	 								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Читать инструкцию пользователя</button>
-	 							</h5>
-	 					</div>
-	 					<div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion">
-	 						<div class="card-body">
-
-	 						<div data-spy="scroll" data-target="#navbar-example2"  
-	 								style="position:relative; height:800px; overflow: auto;">								
-                           <div id="text">		
-                           <h4 id="fat">@fat</h4> 									
-	 								<p>Для вызова программы нужно дважды кликнуть файл WpfAppTO.exe из папки, после чего произойдёт загрузка программы. Программа загружается с чистыми незаполненными информацией элементами для её отображения (рис. 10). В строке состояния выводятся текущие дата и время. Программа должна находится на ПК с установленными операционной системой Windows XP и выше, и пакета Microsoft Office 2007 или моложе  с установленным приложением Access.</p>								
-	 								<p>	При первоначальном запуске приложения ввод данных желательно  начать с таблицы «Товар»,  при этом ,если в данную таблицу ранее вводились данные, то после нажатия кнопки «БАЗА» они будут отображены в окне  в левой верхней части интерфейса .Также заполнение базы данных можно начать с  таблиц «Платежи», «Поставщик» или «Курс_валют».</p> 
-	 								<h4 id="mdo">@mdo</h4> 
-	 								<p>	Для заполнения таблицы «Продажи» нужно сначала заполнить таблицу «Поставки», а перед этим таблицы «Поставщик» , «Курс_валют» и «Товар».</p>	
-	 								<h4 id="one">one</h4>
-	 								<p>Рисунок 3.24 – Предупреждающее сообщение-подсказка</p>
-	 								<p>	Рисунок 3.25 – Сообщение о благополучном выполнении команды в таблицу «Продажи»</p>                          
-	 								<h4 id="two">two</h4>
-	 								<p>При благополучном изменении  данных формируется сообщение о добавление или обновлении записи (рисунок 3.27).</p>	 								
-									</div>	
-	 						</div>
-	 						</div>
-	 					 </div> 		
-	 				</div>
-	 					<nav id="navbar-example2" class="navbar navbar-light bg-light">
-	 									<a class="navbar-brand" href="#">Navbar</a>
-	 									<ul class="nav nav-pills">
-	 										<li class="nav-item">
-	 											<a class="nav-link" href="#fat">@fat</a>
-	 										</li>
-	 										<li class="nav-item">
-	 											<a class="nav-link" href="#mdo">@mdo</a>
-	 										</li>
-	 										<li class="nav-item dropdown">
-	 											<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" >Dropdown</a>
-	 											<div class="dropdown-menu">
-	 												<a class="dropdown-item" href="#one">one</a>
-	 												<a class="dropdown-item" href="#two">two</a>
-	 												<div role="separator" class="dropdown-divider"></div>
-	 												<a class="dropdown-item" href="#three">three</a>
-	 											</div>
-	 										</li>
-	 									</ul>
-	 								</nav>-->						
-
-	 			  <!-- 
-               <div class="card">
-	 						<div class="card-header" id="headingZero">
-	 							<h5>
-	 								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">Коротко о программе</button>
-	 							</h5>
-	 						</div>
-	 						<div class="collapse show" id="collapseZero" aria-labelledby="headingZero" data-parent="#accordion">
-	 							<div class="card-body">
-	 								<p>Данная программа является абсолютно бесплатной и предназначена для использования в торговле товаром, кроме товаров количество которых 	вводится числами с запятой(весовых и мерных товаров).</p>
-	 								<p>Анализ наценки и доходности по каждой группе ,модели , производителю, поставщику и другим критериям отбора товара, переучёт как в единицах товара так и в денежном выражении как в нацианольной так и в иностранной валюте, прибыль, рентабельность.</p>
-	 								<p>  В приложении есть минимальная заполненная база данных для проверки работоспособности и обучения работе с программой.  </p> 								 	
-	 							</div>
-	 						</div>
-	 				</div>			
-	 				<div class="card">
-	 						<div class="card-header" id="headingOne">
-	 							<h5>
-	 								<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Требования к установке программы</button>
-	 							</h5>
-	 						</div>
-	 						<div class="collapse " id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
-	 							<div class="card-body">
-	 								<p> Данный проект создан для работы при условии , что на вашем компьютере установлено програмное обеспечение Майкрософт Офис  2007 или более новая версия и компонент этой программы  Access.</p>
-	 								<p>	Запускается файлом WpfAppTO.exe из каталога без установки, после копирования всей папки "torgovy_object_2019_релиз" из архива в любое удобное место на компьютере. </p>
-	 								<p>	Размер распакованного приложения 8 МБ + 7МБ файл для заполнения новой базы. Размер запакованного архива для скачивания 9,5МБ. Пароль для входа в программу в файле "пароль". 
-	 								</p>
-	 							</div>
-	 						</div>
-	 				</div>	 				
-
-	 			  <div class="card">
-	 						<div class="card-header" id="headingTwo">
-	 							<h5>
-	 								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Смотреть видеоуроки</button>
-	 							</h5>
-	 						</div>
-	 						<div class="collapse"  id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
-	 							<div class="card-body">
-	 								<div id="videoForm">			  
-	 									<div id="ytoube">
-	 										<p>Обзор фунций программы</p>								
-	 										<iframe width="560" height="315" src="https://www.youtube.com/embed/kN8liydVVYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	 										<p>Заполнение базы с нуля</p>
-	 										<iframe width="560" height="315" src="https://www.youtube.com/embed/yNcca0Ic8Uw"></iframe>
-	 									</div>		
-	 								</div>
-	 							</div>
-	 						</div>
-	 				</div>
-	 				<div class="card">
-	 					<div class="card-header" id="headingThree">
-	 							<h5>
-	 								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Читать инструкцию пользователя</button>
-	 							</h5>
-	 					</div>
-	 					<div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion">
-	 						<div class="card-body">
-
-	 						<div data-spy="scroll" data-target="#navbar-example2"  
-	 								style="position:relative; height:800px; overflow: auto;">								
-                           <div id="text">		
-                           <h4 id="fat">@fat</h4> 									
-	 								<p>Для вызова программы нужно дважды кликнуть файл WpfAppTO.exe из папки, после чего произойдёт загрузка программы. Программа загружается с чистыми незаполненными информацией элементами для её отображения (рис. 10). В строке состояния выводятся текущие дата и время. Программа должна находится на ПК с установленными операционной системой Windows XP и выше, и пакета Microsoft Office 2007 или моложе  с установленным приложением Access.</p>								
-	 								<p>	При первоначальном запуске приложения ввод данных желательно  начать с таблицы «Товар»,  при этом ,если в данную таблицу ранее вводились данные, то после нажатия кнопки «БАЗА» они будут отображены в окне  в левой верхней части интерфейса .Также заполнение базы данных можно начать с  таблиц «Платежи», «Поставщик» или «Курс_валют».</p> 
-	 								<h4 id="mdo">@mdo</h4> 
-	 								<p>	Для заполнения таблицы «Продажи» нужно сначала заполнить таблицу «Поставки», а перед этим таблицы «Поставщик» , «Курс_валют» и «Товар».</p>	
-	 								<h4 id="one">one</h4>
-	 								<p>Рисунок 3.24 – Предупреждающее сообщение-подсказка</p>
-	 								<p>	Рисунок 3.25 – Сообщение о благополучном выполнении команды в таблицу «Продажи»</p>                          
-	 								<h4 id="two">two</h4>
-	 								<p>При благополучном изменении  данных формируется сообщение о добавление или обновлении записи (рисунок 3.27).</p>	 								
-									</div>	
-	 						</div>
-	 						</div>
-	 					 </div> 		
-	 				</div>
-	 					<nav id="navbar-example2" class="navbar navbar-light bg-light">
-	 									<a class="navbar-brand" href="#">Navbar</a>
-	 									<ul class="nav nav-pills">
-	 										<li class="nav-item">
-	 											<a class="nav-link" href="#fat">@fat</a>
-	 										</li>
-	 										<li class="nav-item">
-	 											<a class="nav-link" href="#mdo">@mdo</a>
-	 										</li>
-	 										<li class="nav-item dropdown">
-	 											<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" >Dropdown</a>
-	 											<div class="dropdown-menu">
-	 												<a class="dropdown-item" href="#one">one</a>
-	 												<a class="dropdown-item" href="#two">two</a>
-	 												<div role="separator" class="dropdown-divider"></div>
-	 												<a class="dropdown-item" href="#three">three</a>
-	 											</div>
-	 										</li>
-	 									</ul>
-	 					</nav>-->
