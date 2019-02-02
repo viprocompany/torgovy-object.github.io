@@ -69,6 +69,15 @@ overflow: hidden;
 height:auto;
 padding-bottom: 10px;
 }
+#contact{
+   text-align:center;
+
+}
+#autorButton{
+  height:60px;
+  width:100px; 
+  cursor:pointer;
+}
 #reklama{
 height:auto;
 padding-top: 10px;
@@ -107,9 +116,7 @@ div#sideLeft p{
   text-indent: 10px; 
   margin:auto;
 }
-#btnAutor{
- 
-}
+
 #ModalF{
   margin:10px auto 10px auto;  
 }
