@@ -9,7 +9,7 @@
 	<title>Торговый объект в Bootstrap 4</title>
 </head>
 <body> 
-<div class="container">
+	<div class="container">
 		<!--БЛОК ПРИВЕТСТВИЕ-->
 		<div class="row " >
 			<div class="col-12 border border rounded" id="hello">
@@ -22,58 +22,82 @@
 		</div>
 		<!-- БЛОК ЛЕГЕНДА -->
 		<!--описание-->
-				<div class="row border border rounded" id="legend">
-					<div class="col-12">
-					<h4 class="text-center">"Торговый объект" это  бесплатная программа,  с которой легче учитывать расходы и увеличивать ваши доходы. <br> Деньги любят счёт!</h4>
-					</div>
-			   </div>
+		<div class="row border border rounded" id="legend">
+			<div class="col-12">
+				<h4 class="text-center">"Торговый объект" это  бесплатная программа,  с которой легче учитывать расходы и увеличивать ваши доходы. <br> Деньги любят счёт!</h4>
+			</div>
+		</div>
 		<!--БЛОК КОНТЕНТ-->
-    <div class="row "  id="content">	
+		<div class="row "  id="content">	
 			<!--КОНТЕНТ центр глючат скобки-->
-	<div class="col-12 col-md-8 order-md-2 d-flex flex-column  border-info border  rounded" id="center" >
+			<div class="col-12 col-md-8 order-md-2 d-flex flex-column  border-info border  rounded" id="center" >
 				
 				<!--кнопка-->
-	  <div class="row border-success d-block" id="downald">
+				<div class="row border-success d-block" id="downald">
 					<div class="col-12">
-					<div><button id="downaldButton">скачать</button></div>
-					<div><p class="text-center" id="downaldText">Скачать бесплатную программу "Торговый объект"</p></div>
+						<div><button id="downaldButton">скачать</button></div>
+						<div><p class="text-center" id="downaldText">Скачать бесплатную программу "Торговый объект"</p></div>
 					</div>				
 				</div>
-				<!--гармошка  глючат скобки--> 		
-	 <div class="row">
+				<!--гармошка  --> 		
+				<div class="row">
 					<div class="col-12">
 						<div id="accordion">
 							<div class="card">
 								<div class="card-header" id="headingOne">
 									<h5>
-										<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Heading 1</button>
+										<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Кратко о программе</button>
 									</h5>
 								</div>
 								<div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
 									<div class="card-body">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis ex harum repellendus quis a rerum numquam fuga, beatae sint, repellat omnis placeat possimus incidunt, optio consectetur perspiciatis adipisci, libero velit.</p>
+										<p>Данная программа является абсолютно бесплатной и предназначена для использования в торговле товарами, кроме тех, количество которых 	вводится числами с запятой(весовых и мерных товаров).</p>
+										<p>Анализ наценки и доходности по каждой группе ,модели , производителю, поставщику и другим критериям отбора товара, переучёт как в единицах товара так и в денежном выражении как в нацианольной так и в иностранной валюте, прибыль, рентабельность.</p>
+										<p>  В приложении есть минимальная заполненная база данных для проверки работоспособности и обучения работе с программой.  </p> 	
 									</div>
 								</div>
 							</div>
 							<div class="card">
 								<div class="card-header" id="headingTwo">
 									<h5>
-										<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Heading 2</button>
+										<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Требования к установке</button>
 									</h5>
 								</div>
 								<div class="collapse"  id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
 									<div class="card-body">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias accusantium aperiam repudiandae delectus, ea non quos. Labore perferendis neque totam doloribus, nisi amet facilis distinctio laborum modi, optio, asperiores quos!</p>
+										<p> Данный проект создан для работы при условии , что на вашем компьютере установлено програмное обеспечение Майкрософт Офис  2007 или более новая версия и компонент этой программы  Access.</p>
+										<p>	Запускается файлом WpfAppTO.exe из каталога без установки, после копирования всей папки "torgovy_object_2019_релиз" из архива в любое удобное место на компьютере. </p>
+										<p>	Размер распакованного приложения 8 МБ + 7МБ файл для заполнения новой базы. Размер запакованного архива для скачивания 9,5МБ. Пароль для входа в программу в файле "пароль". 
+										</p>
 									</div>
 								</div>
 							</div>
 							<div class="card">
 								<div class="card-header" id="headingThree">
 									<h5>
-										<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Heading 3</button>
+										<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Смотреть видеоуроки</button>
 									</h5>
 								</div>
 								<div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion">
+									<div class="card-body">
+										<div id="videoForm">			  
+											<div id="ytoube">
+												<p>Обзор фунций программы</p>								
+												<iframe width="560" height="315" src="https://www.youtube.com/embed/yNcca0Ic8Uw"></iframe>
+												<p>Заполнение базы с нуля</p>
+												<iframe width="560" height="315" src="https://www.youtube.com/embed/yNcca0Ic8Uw"></iframe>
+											</div>		
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingoFour">
+									<h5>
+										<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Читать инструкцию</button>
+									</h5>
+								</div>
+								<div class="collapse" id="collapseFour" aria-labelledby="headingFour" data-parent="#accordion">
 									<div class="card-body">
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt fugit facilis vel quas praesentium adipisci vero dolor magnam nostrum tenetur nam, eaque officiis ratione eligendi harum fugiat voluptatem minima et?</p>
 									</div>
@@ -83,7 +107,7 @@
 					</div>
 				</div>
 				<!-- карусель  сзатуханием, которое  работает в  bootstra 4.2-->
-	  <div id="sliderFade" class="carousel slide carousel-fade Fade   " data-ride="carousel">
+				<div id="sliderFade" class="carousel slide carousel-fade Fade   " data-ride="carousel">
 					<ol class="carousel-indicators">
 						<li data-target="#sliderFade" data-slide-to="0" class="active"></li>
 						<li data-target="#sliderFade" data-slide-to="1"></li>
@@ -108,46 +132,45 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
      </a> -->
-                </div>	
-     <div class="row">   
-     <div   id="mail2">
-
-  		<!-- <div class="p-2 d-flex flex-column justify-content-center" id="adress"></div>	 -->  	
-     </div>  
-     </div>	
-    <div class="row">
-  	 <div class="col-12" id="adress">
+  </div>	
+  <div class="row">   
+  	<div   id="mail2">  			
+  	</div>  
+  </div>	
+  <div class="row">
+  	<div class="col-12" id="adress">
   		<p>torgovy.object@gmail.com</p>
-  	 </div>
-    </div>		 		
-     </div>
+  	</div>
+  </div>		 		
+</div>
 
 
-<!--КОНТЕНТ левая часть глючат скобки-->
-     <div class="col-6 col-md-2 order-md-1 border border-warning  rounded " id="sideLeft">
+<!--КОНТЕНТ левая часть -->
+<div class="col-6 col-md-2 order-md-1 border border-warning  rounded " id="sideLeft">
 	<div class="col-12">
-	<div class="p-2 d-flex flex-column justify-content-center" id="info">   
-		<div class="" id="instagram"></div>
-		<div class="row" id="insta">
-			<p><a href="#">torgovy_object</a></p>
-		</div>
-		<div class="" id="vkontakte"></div>
-		<div class="row" id="vk">
-			<p><a href="#">torgovy_object</a></p>
-		</div> 
-		<div class="" id="facebook"></div>
-		<div class="row" id="face">
-			<p><a href="#">torgovy_object</a></p>
-		</div>
-	</div>	
+		<div class="p-2 d-flex flex-column justify-content-center" id="info">   
+			<div class="" id="instagram"></div>
+			<div class="row" id="insta">
+				<p><a href="#">torgovy_object</a></p>
+			</div>
+			<div class="" id="vkontakte"></div>
+			<div class="row" id="vk">
+				<p><a href="#">torgovy_object</a></p>
+			</div> 
+			<div class="" id="facebook"></div>
+			<div class="row" id="face">
+				<p><a href="#">torgovy_object</a></p>
+			</div>
+		</div>	
 	</div>
 	<div class="col-12"> 
-	   <div class="row"  id="contact">
+		<div class="row"  id="contact">
 			<!-- Button trigger modal -->
 			<div class="col-12">
-			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalF">
-			написать автору</button> <!-- data-toggle="modal"  запрограммированное в Bootstrap по умолчанию модальное окно с ID нашего окна data-target="#Modal"-->
-			<!-- Modal -->
+				<div class="p-2 d-flex flex-column justify-content-center" ></div>
+				<p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalF">
+				написать автору</button></p> <!-- data-toggle="modal"  запрограммированное в Bootstrap по умолчанию модальное окно с ID нашего окна data-target="#Modal"-->
+				<!-- Modal -->
 			</div>
 			<div class="modal fade" id="ModalF">  <!-- fade окно изначально скрыто -->
 				<div class="modal-dialog modal-dialog-center modal-dialog-lg"> <!-- диалоговое окно можно добавить позиционирование modal-dialog-center и размер modal-dialog-lg или sm -->
@@ -173,36 +196,36 @@
 							</form>
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-danger" data-dismiss="modal">Закрыть</button>							
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Закрыть</button>					
 						</div>
 					</div>
 				</div>
 			</div>
-	   </div>	   			    	      		
+		</div>	   			    	      		
 	</div>
 	
 	<div class="row" id="reklama">
-	<p>Рекламный блок</p>
+		<p>Рекламный блок</p>
 	</div>
-  </div>
+</div>
 
 <!--КОНТЕНТ правая часть-->
-     <div class="col-6 col-md-2 p-1 order-md-3 border-warning border  rounded " id="sideRight">
+<div class="col-6 col-md-2 p-1 order-md-3 border-warning border  rounded " id="sideRight">
 	<div id="ask-answer"></div>
 	<h4>вопрос-ответ</h4> 
 	<p>Вопрос: Почему после ввода данных о поставке или о продаже при формировании отчета отображаются не все данные?</p>
 	<p><span class="answer">Ответ: Проверьте ввели ли вы курс валюты за дату осуществления  продажи, поставки или другой операции.Не забывайте при вводе курса валюты указывать дату,  если вы не ввели её, то программа сформирует её атоматически, но укажет время 12 часов ночи, и данные за этот день соответственно будут видны только на следующий день. Если такое случилось , то воспользуйтесь функцией изменения (значок “карандаш”) выберите требуемую дату и введите курс заново.</span></p>
 	<p>Вопрос: Почему при повторном использовании одного и того же товара для нескольких поставок сумма товара в наличии не соответствует действительности?</p>
 	<p><span class="answer"> Ответ: Для новой поставки нельзя повторно использовать тот  же товар с тем же порядковым номером “IDтовара”, что и ранее, нужно создать новый товар с тем же артикулом ,но с новым IDтовара, и использовать его для дальнейшего учета. В графе “описание” к такому товару можно упомянуть о том ,что это повтор.</span></p>	             
- </div> 	
-  </div>
+</div> 	
+</div>
 
 <!--ПОДВАЛ-->
-   <div class="row" id="footer">
+<div class="row" id="footer">
 	<img src="img/footer.jpg" alt="" class="rounded img-fluid float-center">
-  </div>
+</div>
 <!--БЛОК АВТОР-->
-  <div class="row " id="copyright"></div>
+<div class="row " id="copyright"></div>
 </div>
 
 <!-- Optional JavaScript -->
