@@ -171,12 +171,25 @@ body {
   .carousel {
     height:auto !important;
   }
-  #carouselHeight{
-    
-   height: auto !important;
- }
+.carousel-inner img {
+  display: block;
+  width: 500px !important;
+  height:350px !important;
+  margin: 0 auto;
+  
+}
+.carousel-inner p {
+  padding:5px;
+  margin: 0 auto;
+  text-align: center;
+}
+.carousel-indicators  {
+  visibility:hidden;
+  
+}
  .carousel-indicators li:hover {
   cursor: pointer;
+
 }
 .Fade {
   overflow: hidden; 
@@ -196,7 +209,7 @@ body {
 }
 #autorButton{
   height:60px;
-  width:130px; 
+  width:90px; 
   cursor:pointer;
   display: block;
   margin:  10px auto 10px auto;
