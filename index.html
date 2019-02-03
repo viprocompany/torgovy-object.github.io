@@ -17,9 +17,11 @@
 			</div>
 		</div>
 		<!--БЛОК ХЕДЕР-->
-		<div class="row border-info border  rounded" id="header">
-			<div id="header-image">
-			<img src="img/header2.jpg" alt="" class="img-fluid float-center rounded" > <!-- с закругленными углами  ,float-center выравнивание по центру-->
+		<div class="row border-info border  rounded " id="header">
+			<div class="container-fluid">
+			<div class="row" id="header-image">
+			<img src="img/header2.jpg" alt="" class="img-fluid float-center rounded header" > <!-- с закругленными углами  ,float-center выравнивание по центру-->
+			</div>
 			</div>
 		</div>
 		<!-- БЛОК ЛЕГЕНДА -->
@@ -201,7 +203,7 @@
 				<!-- Button trigger modal -->
 				<div class="mx-auto">
 					<p><button type="button" class="button blue" data-toggle="modal" data-target="#ModalF" id="autorButton">
-					написать</button></p> <!-- data-toggle="modal"  запрограммированное в Bootstrap по умолчанию модальное окно с ID нашего окна data-target="#Modal"-->
+					вопрос</button></p> <!-- data-toggle="modal"  запрограммированное в Bootstrap по умолчанию модальное окно с ID нашего окна data-target="#Modal"-->
 					<!-- Modal -->
 				</div>
 				<div class="modal fade" id="ModalF">  <!-- fade окно изначально скрыто -->
@@ -251,14 +253,15 @@
 	</div>
 
 	<!--ПОДВАЛ-->
-	<div class="row  border-info border  rounded"  id="footer">
-		<div id="footer-image" >
-			<img src="img/footer2.jpg" alt="" class="img-fluid float-center rounded">
-			<p id="footer-text">
-				<a href="#ViPro">Copyright © 2018 ViPro Studio</a>
-			</p>
+	<div class="row  border-info border  rounded"  id="footer"  >
+		<div class="container-fluid">
+			<div  class="row" id="footer-image">       
+				<img src="img/footer2.jpg" alt="" class="img-fluid float-center rounded footer " >
+				<p id="footer-text">
+					<a href="#ViPro">Copyright © 2018 ViPro Studio</a>
+				</p>			
+			</div>
 		</div>
-
 	</div>
 	<!--БЛОК АВТОР-->
 	<div class="row " >

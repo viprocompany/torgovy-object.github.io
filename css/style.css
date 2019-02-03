@@ -1,7 +1,7 @@
 @import url('reset.css');
 
 body {  
-  background-color:#2C5555; 
+  background-color:#69876A; 
   background-image: url("../img/body.png"); 
 }
 
@@ -20,9 +20,18 @@ body {
   margin-bottom: 5px;
   background-color:#D6FFFF;
 }
-#header-image{
+#header-image img{
   display: block;
-  margin:  0 auto 0 auto;
+  margin:  0 auto 0 auto;  
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+.header{
+ background-image: url('img/header2.jpg');
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
 }
 #content{
  height:auto ;
@@ -173,8 +182,8 @@ body {
   }
 .carousel-inner img {
   display: block;
-  width: 500px !important;
-  height:350px !important;
+  max-width: 500px !important;
+  max-height:350px !important;
   margin: 0 auto;
   
 }
@@ -213,6 +222,7 @@ body {
   cursor:pointer;
   display: block;
   margin:  10px auto 10px auto;
+  text-align:center;
 }
 #reklama{
   height:auto;
@@ -271,9 +281,12 @@ div#ask-answer {
   margin: 10px auto auto auto;
 }
 
-#footer-image{
+#footer-image img{
   display: block;
   margin:  0 auto 0 auto;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
 }
 #footer-text  {
   background-color:#D6FFFF;
@@ -281,6 +294,12 @@ div#ask-answer {
   width: 100%;
   text-decoration: none;
   text-align: center;
+}
+.footer{
+ background-image: url('img/footer2.jpg');
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
 }
 <!--ШРИФТЫ->
 
