@@ -1,6 +1,8 @@
 @import url('reset.css');
 
-body {    
+body {  
+background-color:#2C5555; 
+background-image: url("../img/body.png"); 
 }
 .container {
   height:auto;
@@ -25,10 +27,10 @@ body {
   background-color:#E9FDFD;
 }
 #sideLeft{
-background-color:#FFFFC6;
+background-color:#E9FDFD;
 }
 #sideRight{
- background-color:#FFFFC6;
+ background-color:#E9FDFD;
 }
 
 #downald{
@@ -245,6 +247,14 @@ div#ask-answer {
   height: 50px;
   display: block;
   margin: 10px auto auto auto;
+}
+ 
+  #footer-text  {
+background-color:#D6FFFF;
+padding: 10px;
+width: 100%;
+text-decoration: none;
+text-align: center;
 }
 <!--ШРИФТЫ->
 
