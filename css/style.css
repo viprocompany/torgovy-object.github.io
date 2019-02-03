@@ -1,12 +1,10 @@
 @import url('reset.css');
 
 body {  
-background-color:#2C5555; 
-background-image: url("../img/body.png"); 
+  background-color:#2C5555; 
+  background-image: url("../img/body.png"); 
 }
-.container {
-  height:auto;
-}
+
 #hello {
   background-color:#D6FFFF;
   padding-top: 5px ;
@@ -17,28 +15,38 @@ background-image: url("../img/body.png");
   font-style: italic;  
   text-align: center;
 }
-
+#header{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color:#D6FFFF;
+}
+#header-image{
+  display: block;
+  margin:  0 auto 0 auto;
+}
 #content{
  height:auto ;
  margin-top: 5px;
- margin-bottom: 5px; 
+ margin-bottom:5px; 
 }
 #center {
   background-color:#E9FDFD;
 }
 #sideLeft{
-background-color:#E9FDFD;
+  background-color:#E9FDFD;
 }
 #sideRight{
  background-color:#E9FDFD;
 }
-
+#footer{
+ background-color:#D6FFFF;
+}
 #downald{
   padding: 10px;
 }
 #legend{  
-padding: 10px;
-background-color:#D6FFFF;
+  padding: 10px;
+  background-color:#D6FFFF;
 }
 #downaldButton { 
   height:60px;
@@ -47,130 +55,131 @@ background-color:#D6FFFF;
 }
 .button{
 	font:20px Calibri, Arial, sans-serif;
-    color:white;
-	/* A semi-transparent text shadow */
-	text-shadow:1px 1px 0 rgba(255,255,255,0.4);
-	
-	/* Overriding the default underline styling of the links */
-	text-decoration:none !important;
-	white-space:nowrap;
-	
-	display:inline-block;
-	vertical-align:baseline;
-	position:relative;
-	cursor:pointer;
-	padding:10px 10px;	
-	background-repeat:no-repeat;
+  color:white;
+  /* A semi-transparent text shadow */
+  text-shadow:1px 1px 0 rgba(255,255,255,0.4);
+
+  /* Overriding the default underline styling of the links */
+  text-decoration:none !important;
+  white-space:nowrap;
+
+  display:inline-block;
+  vertical-align:baseline;
+  position:relative;
+  cursor:pointer;
+  padding:10px 10px;	
+  background-repeat:no-repeat;
 	/* The following two rules are fallbacks, in case
-	   the browser does not support multiple backgrounds. */
-	background-position:bottom left;
-	background-image:url('../img/button_bg.png');	
+  the browser does not support multiple backgrounds. */
+  background-position:bottom left;
+  background-image:url('../img/button_bg.png');	
 	/* Multiple backgrounds version. The background images
-	   are defined individually in color classes */	
-	background-position:bottom left, top right, 0 0, 0 0;
-	background-clip:border-box;	
-	/* Applying a default border raidus of 8px */	
-	-moz-border-radius:8px;
-	-webkit-border-radius:8px;
-	border-radius:8px;	
-	/* A 1px highlight inside of the button */
-	
-	-moz-box-shadow:0 0 1px #fff inset;
-	-webkit-box-shadow:0 0 1px #fff inset;
-	box-shadow:0 0 1px #fff inset;	
-	/* Animating the background positions with CSS3 */
-	/* Currently works only in Safari/Chrome */	
-	-webkit-transition:background-position 1s;
-	-moz-transition:background-position 1s;
-	transition:background-position 1s;
-   cursor:pointer;
+  are defined individually in color classes */	
+  background-position:bottom left, top right, 0 0, 0 0;
+  background-clip:border-box;	
+  /* Applying a default border raidus of 8px */	
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;	
+  /* A 1px highlight inside of the button */
+
+  -moz-box-shadow:0 0 1px #fff inset;
+  -webkit-box-shadow:0 0 1px #fff inset;
+  box-shadow:0 0 1px #fff inset;	
+  /* Animating the background positions with CSS3 */
+  /* Currently works only in Safari/Chrome */	
+  -webkit-transition:background-position 1s;
+  -moz-transition:background-position 1s;
+  transition:background-position 1s;
+  cursor:pointer;
 }
 
 .button:hover{	
 	/* The first rule is a fallback, in case the browser
 	   does not support multiple backgrounds
-	*/	
-	background-position:top left;
-	background-position:top left, bottom right, 0 0, 0 0;
-}
+    */	
+    background-position:top left;
+    background-position:top left, bottom right, 0 0, 0 0;
+  }
 
-.button:active{
-	/* Moving the button 1px to the bottom when clicked */
-	bottom:-1px;
-}
+  .button:active{
+   /* Moving the button 1px to the bottom when clicked */
+   bottom:-1px;
+ }
 /* .button.rounded{
 	-moz-border-radius:4em;
 	-webkit-border-radius:4em;
 	border-radius:4em;
-}  */
+  }  */
 
-.green.button{
-	color:#345903 !important;
-	border:1px solid #96a37b !important;	
-	background-color: #79be1e;	
-	background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(162,211,30,1) 0,rgba(162,211,30,0) 100px),-moz-linear-gradient(#82cc27, #74b317);
-	background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(162,211,30,1)), to(rgba(162,211,30,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#82cc27), to(#74b317));
-}
-.green.button:hover{
-	background-color:#89d228;	
-	background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(183,229,45,1) 0,rgba(183,229,45,0) 100px),-moz-linear-gradient(#90de31, #7fc01e);
-	background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(183,229,45,1)), to(rgba(183,229,45,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#90de31), to(#7fc01e));
-}
+  .green.button{
+   color:#345903 !important;
+   border:1px solid #96a37b !important;	
+   background-color: #79be1e;	
+   background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(162,211,30,1) 0,rgba(162,211,30,0) 100px),-moz-linear-gradient(#82cc27, #74b317);
+   background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(162,211,30,1)), to(rgba(162,211,30,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#82cc27), to(#74b317));
+ }
+ .green.button:hover{
+   background-color:#89d228;	
+   background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(183,229,45,1) 0,rgba(183,229,45,0) 100px),-moz-linear-gradient(#90de31, #7fc01e);
+   background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(183,229,45,1)), to(rgba(183,229,45,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#90de31), to(#7fc01e));
+ }
 
-.blue.button{
-	color:#0f4b6d !important;	
-	border:1px solid #84acc3 !important;	
-	/* A fallback background color */
-	background-color: #48b5f2;	
-	/* Specifying a version with gradients according to */	
-	background-image:	url('../img/button_bg.png'), url('../img/button_bg.png'),
-						-moz-radial-gradient(	center bottom, circle,
-												rgba(89,208,244,1) 0,rgba(89,208,244,0) 100px),
-						-moz-linear-gradient(#4fbbf7, #3faeeb);
-	background-image:	url('../img/button_bg.png'), url('../img/button_bg.png'),
-						-webkit-gradient(	radial, 50% 100%, 0, 50% 100%, 100,
-											from(rgba(89,208,244,1)), to(rgba(89,208,244,0))),
-						-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4fbbf7), to(#3faeeb));
-						}
-.blue.button:hover{
-	background-color:#63c7fe;	
-	background-image:	url('../img/button_bg.png'), url('../img/button_bg.png'),
-						-moz-radial-gradient(	center bottom, circle,
-												rgba(109,217,250,1) 0,rgba(109,217,250,0) 100px),
-						-moz-linear-gradient(#63c7fe, #58bef7);						
-	background-image:	url('../img/button_bg.png'), url('../img/button_bg.png'),
-						-webkit-gradient(	radial, 50% 100%, 0, 50% 100%, 100,
-											from(rgba(109,217,250,1)), to(rgba(109,217,250,0))),
-						-webkit-gradient(linear, 0% 0%, 0% 100%, from(#63c7fe), to(#58bef7));}
+ .blue.button{
+   color:#0f4b6d !important;	
+   border:1px solid #84acc3 !important;	
+   /* A fallback background color */
+   background-color: #48b5f2;	
+   /* Specifying a version with gradients according to */	
+   background-image:	url('../img/button_bg.png'), url('../img/button_bg.png'),
+   -moz-radial-gradient(	center bottom, circle,
+    rgba(89,208,244,1) 0,rgba(89,208,244,0) 100px),
+   -moz-linear-gradient(#4fbbf7, #3faeeb);
+   background-image:	url('../img/button_bg.png'), url('../img/button_bg.png'),
+   -webkit-gradient(	radial, 50% 100%, 0, 50% 100%, 100,
+     from(rgba(89,208,244,1)), to(rgba(89,208,244,0))),
+   -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4fbbf7), to(#3faeeb));
+ }
+ .blue.button:hover{
+   background-color:#63c7fe;	
+   background-image:	url('../img/button_bg.png'), url('../img/button_bg.png'),
+   -moz-radial-gradient(	center bottom, circle,
+    rgba(109,217,250,1) 0,rgba(109,217,250,0) 100px),
+   -moz-linear-gradient(#63c7fe, #58bef7);						
+   background-image:	url('../img/button_bg.png'), url('../img/button_bg.png'),
+   -webkit-gradient(	radial, 50% 100%, 0, 50% 100%, 100,
+     from(rgba(109,217,250,1)), to(rgba(109,217,250,0))),
+   -webkit-gradient(linear, 0% 0%, 0% 100%, from(#63c7fe), to(#58bef7));}
 
-.orange.button{
-	color:#693e0a !important;
-	border:1px solid #bea280 !important;	
-	background-color: #e38d27;	
-	background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(232,189,45,1) 0,rgba(232,189,45,0) 100px),-moz-linear-gradient(#f1982f, #d4821f);
-	background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(232,189,45,1)), to(rgba(232,189,45,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#f1982f), to(#d4821f));
-}
-.orange.button:hover{
-	background-color:#ec9732;	
-	background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(241,192,52,1) 0,rgba(241,192,52,0) 100px),-moz-linear-gradient(#f9a746, #e18f2b);
-	background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(241,192,52,1)), to(rgba(241,192,52,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9a746), to(#e18f2b));
-}		
-				
-#downaldText{
-padding-top:10px;
-}
+   .orange.button{
+     color:#693e0a !important;
+     border:1px solid #bea280 !important;	
+     background-color: #e38d27;	
+     background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(232,189,45,1) 0,rgba(232,189,45,0) 100px),-moz-linear-gradient(#f1982f, #d4821f);
+     background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(232,189,45,1)), to(rgba(232,189,45,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#f1982f), to(#d4821f));
+   }
+   .orange.button:hover{
+     background-color:#ec9732;	
+     background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(241,192,52,1) 0,rgba(241,192,52,0) 100px),-moz-linear-gradient(#f9a746, #e18f2b);
+     background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(241,192,52,1)), to(rgba(241,192,52,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9a746), to(#e18f2b));
+   }		
 
-.carousel {
-height:auto !important;
-}
-#carouselHeight{
-	height: auto !important;
-}
-.carousel-indicators li:hover {
+   #downaldText{
+    padding-top:10px;
+  }
+
+  .carousel {
+    height:auto !important;
+  }
+  #carouselHeight{
+    
+   height: auto !important;
+ }
+ .carousel-indicators li:hover {
   cursor: pointer;
 }
 .Fade {
-overflow: hidden; 
+  overflow: hidden; 
 }
 #adress {
   padding:5px;
@@ -179,11 +188,11 @@ overflow: hidden;
 <!-- левый блок блок-->
 
 #info, #form, #contact{
-height:auto;
-padding-bottom: 10px;
+  height:auto;
+  padding-bottom: 10px;
 }
 #contact{
-   text-align:center;
+ text-align:center;
 }
 #autorButton{
   height:60px;
@@ -193,8 +202,8 @@ padding-bottom: 10px;
   margin:  10px auto 10px auto;
 }
 #reklama{
-height:auto;
-padding-top: 10px;
+  height:auto;
+  padding-top: 10px;
 }
 
 #mail2 {
@@ -227,7 +236,7 @@ padding-top: 10px;
   margin:  10px auto 10px auto;
 }
 div#sideLeft p{
-  
+
   margin:auto;
 }
 
@@ -248,13 +257,17 @@ div#ask-answer {
   display: block;
   margin: 10px auto auto auto;
 }
- 
-  #footer-text  {
-background-color:#D6FFFF;
-padding: 10px;
-width: 100%;
-text-decoration: none;
-text-align: center;
+
+#footer-image{
+  display: block;
+  margin:  0 auto 0 auto;
+}
+#footer-text  {
+  background-color:#D6FFFF;
+  padding: 10px;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
 }
 <!--ШРИФТЫ->
 
@@ -284,13 +297,13 @@ div#legend h4 {
 } 
 div#sideRight h4 {
  color: #330033;
-  font-family: 'Courier New Bold', Monaco, monospace;
-  font-size:  20px;
-  font-style: italic;
-  font-weight:  bold;
-  text-align: center; 
-  }  
-      
+ font-family: 'Courier New Bold', Monaco, monospace;
+ font-size:  20px;
+ font-style: italic;
+ font-weight:  bold;
+ text-align: center; 
+}  
+
 div#sideRight p{
   color: #330033;
   font-family: 'Courier New Bold', Monaco, monospace;

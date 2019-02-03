@@ -9,7 +9,7 @@
 	<title>Торговый объект в Bootstrap 4</title>
 </head>
 <body> 
-	<div class="container">
+	<div class="container-fluid" >
 		<!--БЛОК ПРИВЕТСТВИЕ-->
 		<div class="row " >
 			<div class="col-12 border border-info rounded" id="hello">
@@ -17,8 +17,10 @@
 			</div>
 		</div>
 		<!--БЛОК ХЕДЕР-->
-		<div class="row" id="header">
-			<img src="img/header.jpg" alt="" class="rounded img-fluid float-center"> <!-- с закругленными углами  ,float-center выравнивание по центру-->
+		<div class="row border-info border  rounded" id="header">
+			<div id="header-image">
+			<img src="img/header2.jpg" alt="" class="img-fluid float-center rounded" > <!-- с закругленными углами  ,float-center выравнивание по центру-->
+			</div>
 		</div>
 		<!-- БЛОК ЛЕГЕНДА -->
 		<!--описание-->
@@ -29,8 +31,8 @@
 		</div>
 		<!--БЛОК КОНТЕНТ-->
 		<div class="row "  id="content">	
-			<!--КОНТЕНТ центр глючат скобки-->
-			<div class="col-12 col-md-8 order-md-2 d-flex flex-column  border-info border  rounded" id="center" >
+			<!--КОНТЕНТ центр глючат скобки в Sublime-->
+		 <div class="col-12 col-sm-8 order-sm-2 col-md-7 order-md-2 mr-auto d-flex flex-column  border-info border  rounded" id="center" >
 				
 				<!--кнопка-->
 				<div class="row border-success d-block" id="downald">
@@ -115,7 +117,7 @@
 													<div class="dropdown-menu">
 														<a class="dropdown-item" href="#one">one</a>
 														<a class="dropdown-item" href="#two">two</a>
-														<div role="separator" class="dropdown-divider"></div>
+														<div role="separator" class="dropdown-divider">													</div>
 														<a class="dropdown-item" href="#end">end</a>
 													</div>
 												</li>
@@ -137,10 +139,11 @@
 									</div>		      
 								</div>	
 							</div>
+
 						</div>
 					</div>
 				</div>
-			</div>
+			 </div>
 			<!-- карусель  сзатуханием, которое  работает в  bootstra 4.2-->
 			<div id="sliderFade" class="carousel slide carousel-fade Fade   " data-ride="carousel">
 				<ol class="carousel-indicators">
@@ -162,116 +165,105 @@
 						<div><p>Так можно считать сейчас!</p></div>
 					</div>
 				</div>
-   <!--  <a class="carousel-control-prev" href="#sliderFade" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#sliderFade" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a> -->
-    </div>	
-    <div class="row">   
-    	<div   id="mail2">  			
-    	</div>  
-    </div>	
-    <div class="row">
-    	<div class="col-12" id="adress">
-    		<p>torgovy.object@gmail.com</p>
-    	</div>
-    </div>		 		
-  </div>
+			</div>	
+			<div class="row">   
+				<div   id="mail2">  			
+				</div>  
+			</div>	
+			<div class="row">
+				<div class="col-12" id="adress">
+					<p>torgovy.object@gmail.com</p>
+				</div>
+			</div>		 		
+		
+        </div>
 
+		<!--КОНТЕНТ левая часть -->
+		<div class="col-6 col-sm-2 order-sm-1 col-md-2   mr-auto border border-info  rounded " id="sideLeft">
+			<div class="col-12">
+				<div class="p-2 d-flex flex-column justify-content-center" id="info">   
+					<div class="" id="instagram"></div>
+					<div class="row" id="insta">
+						<p><a href="#">torgovy_object</a></p>
+					</div>
+					<div class="" id="vkontakte"></div>
+					<div class="row" id="vk">
+						<p><a href="#">torgovy_object</a></p>
+					</div> 
+					<div class="" id="facebook"></div>
+					<div class="row" id="face">
+						<p><a href="#">torgovy_object</a></p>
+					</div>
 
-  <!--КОНТЕНТ левая часть -->
-  <div class="col-6 col-md-2 order-md-1 border border-info  rounded " id="sideLeft">
-  	<div class="col-12">
-  		<div class="p-2 d-flex flex-column justify-content-center" id="info">   
-  			<div class="" id="instagram"></div>
-  			<div class="row" id="insta">
-  				<p><a href="#">torgovy_object</a></p>
-  			</div>
-  			<div class="" id="vkontakte"></div>
-  			<div class="row" id="vk">
-  				<p><a href="#">torgovy_object</a></p>
-  			</div> 
-  			<div class="" id="facebook"></div>
-  			<div class="row" id="face">
-  				<p><a href="#">torgovy_object</a></p>
-  			</div>
+				</div>	
+			</div>
+			<div class="row"  id="contact">
+				<!-- Button trigger modal -->
+				<div class="mx-auto">
+					<p><button type="button" class="button blue" data-toggle="modal" data-target="#ModalF" id="autorButton">
+					написать</button></p> <!-- data-toggle="modal"  запрограммированное в Bootstrap по умолчанию модальное окно с ID нашего окна data-target="#Modal"-->
+					<!-- Modal -->
+				</div>
+				<div class="modal fade" id="ModalF">  <!-- fade окно изначально скрыто -->
+					<div class="modal-dialog modal-dialog-center modal-dialog-lg"> <!-- диалоговое окно можно добавить позиционирование modal-dialog-center и размер modal-dialog-lg или sm -->
+						<div class="modal-content"> <!-- задает размеры окна -->
+							<div class="modal-header">
+								<h5 class="modal-title">Заполните форму и отправьте сообщение</h5>						
+							</div>
+							<div class="modal-body"> 
+								<form  id="formValidation">
+									<div class="form-group row">
+										<label  class="col-3" for="exampleInputEmail">Email адрес</label>
+										<input type="email" class="form-control col-9" id="exampleInputEmail" required placeholder="Email адрес" >
+									</div>
+									<div class="form-group row">
+										<label class="question col-3" for="name">введите  имя</label>
+										<input class="form-control col-9" type="text" name="name" id="name" maxlength="30" size="35" placeholder="имя" required pattern="^[a-zA-Zа-яА-ЯёЁІіЇїЄєҐґ']+$" >
+									</div>
+									<div class="form-group row">
+										<label class="question col-3 tp" for="text"><span class="ask">Задайте вопрос :</span></label>
+										<p><textarea name="text" id="text" cols="70" rows="5" required placeholder="введите текст ..." ></textarea></p> 
+									</div>
+									<button type="submit" class="button  green">Отправить сообщение</button>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="button orange" data-dismiss="modal">Закрыть</button>					
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	   			    	      		
+			<div class="row" id="reklama">
+				<p>Рекламный блок</p>
+			</div>
+		</div>
 
-  		</div>	
-  	</div>
+		<!--КОНТЕНТ правая часть-->
+		<div class="col-6 col-sm-2  order-sm-3 col-md-2  p-1 order-md-3    p-1   border-info border  rounded " id="sideRight">
+			<div id="ask-answer"></div>
+			<h4>вопрос-ответ</h4> 
+			<p>Вопрос: Почему после ввода данных о поставке или о продаже при формировании отчета отображаются не все данные?</p>
+			<p><span class="answer">Ответ: Проверьте ввели ли вы курс валюты за дату осуществления  продажи, поставки или другой операции.Не забывайте при вводе курса валюты указывать дату,  если вы не ввели её, то программа сформирует её атоматически, но укажет время 12 часов ночи, и данные за этот день соответственно будут видны только на следующий день. Если такое случилось , то воспользуйтесь функцией изменения (значок “карандаш”) выберите требуемую дату и введите курс заново.</span></p>
+			<p>Вопрос: Почему при повторном использовании одного и того же товара для нескольких поставок сумма товара в наличии не соответствует действительности?</p>
+			<p><span class="answer"> Ответ: Для новой поставки нельзя повторно использовать тот  же товар с тем же порядковым номером “IDтовара”, что и ранее, нужно создать новый товар с тем же артикулом ,но с новым IDтовара, и использовать его для дальнейшего учета. В графе “описание” к такому товару можно упомянуть о том ,что это повтор.</span></p>	             
+		</div> 	
+	</div>
 
-  	<div class="row"  id="contact">
-  		<!-- Button trigger modal -->
-  		<div class="mx-auto">
-  			<p><button type="button" class="button blue" data-toggle="modal" data-target="#ModalF" id="autorButton">
-  			написать</button></p> <!-- data-toggle="modal"  запрограммированное в Bootstrap по умолчанию модальное окно с ID нашего окна data-target="#Modal"-->
-  			<!-- Modal -->
-  		</div>
-  		<div class="modal fade" id="ModalF">  <!-- fade окно изначально скрыто -->
-  			<div class="modal-dialog modal-dialog-center modal-dialog-lg"> <!-- диалоговое окно можно добавить позиционирование modal-dialog-center и размер modal-dialog-lg или sm -->
-  				<div class="modal-content"> <!-- задает размеры окна -->
-  					<div class="modal-header">
-  						<h5 class="modal-title">Заполните форму и отправьте сообщение</h5>						
-  					</div>
-  					<div class="modal-body"> 
-  						<form  id="formValidation">
-  							<div class="form-group row">
-  								<label  class="col-3" for="exampleInputEmail">Email адрес</label>
-  								<input type="email" class="form-control col-9" id="exampleInputEmail" required placeholder="Email адрес" >
-  							</div>
-  							<div class="form-group row">
-  								<label class="question col-3" for="name">введите  имя</label>
-  								<input class="form-control col-9" type="text" name="name" id="name" maxlength="30" size="35" placeholder="имя" required pattern="^[a-zA-Zа-яА-ЯёЁІіЇїЄєҐґ']+$" >
-  							</div>
-  							<div class="form-group row">
-  								<label class="question col-3 tp" for="text"><span class="ask">Задайте вопрос :</span></label>
-  								<p><textarea name="text" id="text" cols="70" rows="5" required placeholder="введите текст ..." ></textarea></p> 
-  							</div>
-  							<button type="submit" class="button  green">Отправить сообщение</button>
-  						</form>
-  					</div>
-  					<div class="modal-footer">
-  						<button type="button" class="button orange" data-dismiss="modal">Закрыть</button>					
-  					</div>
-  				</div>
-  			</div>
-  		</div>
-  	</div>	   			    	      		
+	<!--ПОДВАЛ-->
+	<div class="row  border-info border  rounded"  id="footer">
+		<div id="footer-image" >
+			<img src="img/footer2.jpg" alt="" class="img-fluid float-center rounded">
+			<p id="footer-text">
+				<a href="#ViPro">Copyright © 2018 ViPro Studio</a>
+			</p>
+		</div>
 
-
-  	<div class="row" id="reklama">
-  		<p>Рекламный блок</p>
-  	</div>
-  </div>
-
-  <!--КОНТЕНТ правая часть-->
-  <div class="col-6 col-md-2 p-1 order-md-3 border-info border  rounded " id="sideRight">
-  	<div id="ask-answer"></div>
-  	<h4>вопрос-ответ</h4> 
-  	<p>Вопрос: Почему после ввода данных о поставке или о продаже при формировании отчета отображаются не все данные?</p>
-  	<p><span class="answer">Ответ: Проверьте ввели ли вы курс валюты за дату осуществления  продажи, поставки или другой операции.Не забывайте при вводе курса валюты указывать дату,  если вы не ввели её, то программа сформирует её атоматически, но укажет время 12 часов ночи, и данные за этот день соответственно будут видны только на следующий день. Если такое случилось , то воспользуйтесь функцией изменения (значок “карандаш”) выберите требуемую дату и введите курс заново.</span></p>
-  	<p>Вопрос: Почему при повторном использовании одного и того же товара для нескольких поставок сумма товара в наличии не соответствует действительности?</p>
-  	<p><span class="answer"> Ответ: Для новой поставки нельзя повторно использовать тот  же товар с тем же порядковым номером “IDтовара”, что и ранее, нужно создать новый товар с тем же артикулом ,но с новым IDтовара, и использовать его для дальнейшего учета. В графе “описание” к такому товару можно упомянуть о том ,что это повтор.</span></p>	             
-  </div> 	
-</div>
-
-<!--ПОДВАЛ-->
-<div class="row  border-info border  rounded" id="footer">
-	 <div id="footer-image">
-	 	<img src="img/footer.jpg" alt="" class=" img-fluid float-center">
-    <p id="footer-text">
-		<a href="#ViPro">Copyright © 2018 ViPro Studio</a>
-		</p>
-	 </div>
-	
-
-</div>
-<!--БЛОК АВТОР-->
-<div class="row " id="copyright"></div>
-
+	</div>
+	<!--БЛОК АВТОР-->
+	<div class="row " >
+      
+			</div>
 </div>
 
 <!-- Optional JavaScript -->
