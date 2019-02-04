@@ -4,9 +4,3 @@
 $('.carousel-fade').carousel({
 	interval: 5000
 });
-$(document).ready(function(){
- $('.footer').width($(window).width());
-})
-$(document).ready(function(){
- $('.header').width($(window).width());
-})
