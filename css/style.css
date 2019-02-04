@@ -1,45 +1,33 @@
 @import url('reset.css');
-
-body {  
-  background-color:#69876A; 
-  background-image: url("../img/body.png"); 
+body {    
+  background-color:#2C2E32; 
+  <!--background-image: url("../img/body.png");--> 
 }
-
-#hello {
-  background-color:#D6FFFF;
-  padding-top: 5px ;
-  padding-bottom: 5px;
-  color: #330033;
-  font-family: 'Courier New Bold', Monaco, monospace;
-  font-size:  24px;
-  font-style: italic;  
-  text-align: center;
-}
-#header{
-  margin-top: 5px;
-  margin-bottom: 5px;
-  background-color:#D6FFFF;
-}
-#header-image img{
-  display: block;
-  margin:  0 auto 0 auto;  
-  display: inline-block;
+.container{
   height: auto;
-  max-width: 100%;
 }
-.header{
- background-image: url('img/header2.jpg');
- background-attachment: fixed;
- background-size: cover;
- background-position: center;
+.cont{ 
+max-width:3760px !important;
+}
+#header{ 
+}
+#header-image{
+  display: block;
+  margin:  0 auto 0 auto; 
 }
 #content{
  height:auto ;
- margin-top: 5px;
+ margin-top: 20px;
  margin-bottom:5px; 
+ margin:  10px auto 0 auto; 
 }
 #center {
   background-color:#E9FDFD;
+}
+#legend{  
+  padding: 10px;
+  background-color:#138E74;
+  margin:  0 auto 0 auto; 
 }
 #sideLeft{
   background-color:#E9FDFD;
@@ -47,20 +35,20 @@ body {
 #sideRight{
  background-color:#E9FDFD;
 }
-#footer{
- background-color:#D6FFFF;
-}
 #downald{
-  padding: 10px;
+  background-color: #FF7A3E;
 }
-#legend{  
-  padding: 10px;
-  background-color:#D6FFFF;
+#downald p{
+ text-align: center;
+ padding: auto;
+ margin: auto;
 }
 #downaldButton { 
   height:60px;
   width:300px; 
   cursor:pointer;
+  text-align: center;
+  margin:5px auto 2px auto; 
 }
 .button{
 	font:20px Calibri, Arial, sans-serif;
@@ -174,7 +162,7 @@ body {
    }		
 
    #downaldText{
-    padding-top:10px;
+    padding:2px;
   }
 
   .carousel {
@@ -212,9 +200,13 @@ body {
 #info, #form, #contact{
   height:auto;
   padding-bottom: 10px;
+  text-align:center;
+}
+#info p a{
+  
 }
 #contact{
- text-align:center;
+ 
 }
 #autorButton{
   height:60px;
@@ -228,7 +220,6 @@ body {
   height:auto;
   padding-top: 10px;
 }
-
 #mail2 {
   background: url('../img/mail.png') no-repeat;  
   width: 50px; 
@@ -259,8 +250,12 @@ body {
   margin:  10px auto 10px auto;
 }
 div#sideLeft p{
-
+  text-align: center;
   margin:auto;
+}
+div#info {
+  font-size: 14px;
+  font-style: normal;  
 }
 
 #ModalF{
@@ -281,26 +276,17 @@ div#ask-answer {
   margin: 10px auto auto auto;
 }
 
-#footer-image img{
+
+#footer-image {
   display: block;
-  margin:  0 auto 0 auto;
-  display: inline-block;
-  height: auto;
-  max-width: 100%;
+  margin:  0 auto 0 auto; 
 }
-#footer-text  {
-  background-color:#D6FFFF;
+#footer-text  { 
   padding: 10px;
-  width: 100%;
-  text-decoration: none;
+  width: 100%;  
   text-align: center;
 }
-.footer{
- background-image: url('img/footer2.jpg');
- background-attachment: fixed;
- background-size: cover;
- background-position: center;
-}
+
 <!--ШРИФТЫ->
 
 div#content p{
@@ -308,25 +294,20 @@ div#content p{
   font-size:16px;
   font-weight:  bold;
 }
+div#legend h4 {
+  font-size:  16px;
+  font-style: italic;
+  font-weight:  bold;
+  text-align: center;
+  color: #ffffff;
+} 
 div#downald p{
-  color:#005555;
+  color:#2C2E32;
   font-family: 'Courier New Bold', Monaco, monospace;
   font-size: 16px;
   font-style: italic;
   font-weight:bold;
 }
-div#sideLeft p{
-  font-size: 12px;
-  font-style: normal;
-}
-div#legend h4 {
-  font-family: 'Courier New Bold', Monaco, monospace;
-  font-size:  16px;
-  font-style: italic;
-  font-weight:  bold;
-  text-align: center;
-  color: #330033;
-} 
 div#sideRight h4 {
  color: #330033;
  font-family: 'Courier New Bold', Monaco, monospace;
@@ -335,7 +316,6 @@ div#sideRight h4 {
  font-weight:  bold;
  text-align: center; 
 }  
-
 div#sideRight p{
   color: #330033;
   font-family: 'Courier New Bold', Monaco, monospace;
@@ -344,7 +324,10 @@ div#sideRight p{
   line-height:1em;
   text-indent:10px;
   font-weight:bold;
-
 } 
 div#sideRight , p span.answer {
   color: #003300;} 
+#footer-text  a{ 
+  color:white;
+  text-decoration: none;
+}
