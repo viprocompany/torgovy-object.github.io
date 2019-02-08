@@ -1,7 +1,7 @@
 @import url('reset.css');
 body {    
   background-color:#2C2E32; 
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family:Lucida Sans Unicode, Lucida Grande, Arial, Arial, Helvetica, sans-serif;
   <!--background-image: url("../img/body.png");--> 
 }
 .container{
@@ -11,152 +11,50 @@ body {
 max-width:3760px !important;
 }
 
-#header{
-  display: block;
+.header{
+  display:block;
   margin:  0 auto 0 auto; 
+  /* position:relative;*/
 }
-#legend{  
+/* .header .headerText h1{  
+  position: absolute;
+  margin:10 px auto 10 px auto;
+  top: 15px;
+  width: 100%;
+  height: 50%;
+}*/
+.legend{  
   padding: 10px;
-  background-color:#138E74;
+  /*background-color:#138E74;*/
   margin:  0 auto 0 auto; 
 }
-div #content{
+.content{
  height:auto ;
  margin-top: 20px;
  margin-bottom:5px; 
- margin:  10px auto 0 auto; 
+ margin:  10px auto 0 auto;
+
 }
-#center {
+.colorContent{
   background-color:#E9FDFD;
 }
-#downald{
-  background-color: #FF7A3E;
+.downald{
+  /*background-color: #FF7A3E;*/
+  padding:2px;
 }
-#downaldButton { 
+.downaldButton { 
   cursor:pointer;
   text-align: center;
   margin:10px auto 10px auto; 
 }
-#sideLeft{
-  background-color:#E9FDFD;
+  
+.card-header{
+  background-color: #FF7A3E;
 }
-#sideRight{
- background-color:#E9FDFD;
+.card-header .btn-link{
+  color:#ffffff;
+  text-decoration: none;
 }
-.button{
-	font:20px Calibri, Arial, sans-serif;
-  color:white;
-  /* A semi-transparent text shadow */
-  text-shadow:1px 1px 0 rgba(255,255,255,0.4);
-
-  /* Overriding the default underline styling of the links */
-  text-decoration:none !important;
-  white-space:nowrap;
-
-  display:inline-block;
-  vertical-align:baseline;
-  position:relative;
-  cursor:pointer;
-  padding:10px 10px;	
-  background-repeat:no-repeat;
-	/* The following two rules are fallbacks, in case
-  the browser does not support multiple backgrounds. */
-  background-position:bottom left;
-  background-image:url('../img/button_bg.png');	
-	/* Multiple backgrounds version. The background images
-  are defined individually in color classes */	
-  background-position:bottom left, top right, 0 0, 0 0;
-  background-clip:border-box;	
-  /* Applying a default border raidus of 8px */	
-  -moz-border-radius:8px;
-  -webkit-border-radius:8px;
-  border-radius:8px;	
-  /* A 1px highlight inside of the button */
-
-  -moz-box-shadow:0 0 1px #fff inset;
-  -webkit-box-shadow:0 0 1px #fff inset;
-  box-shadow:0 0 1px #fff inset;	
-  /* Animating the background positions with CSS3 */
-  /* Currently works only in Safari/Chrome */	
-  -webkit-transition:background-position 1s;
-  -moz-transition:background-position 1s;
-  transition:background-position 1s;
-  cursor:pointer;
-}
-.button:hover{	
-	/* The first rule is a fallback, in case the browser
-	   does not support multiple backgrounds
-    */	
-    background-position:top left;
-    background-position:top left, bottom right, 0 0, 0 0;
-  }
-
-  .button:active{
-   /* Moving the button 1px to the bottom when clicked */
-   bottom:-1px;
- }
-/* .button.rounded{
-	-moz-border-radius:4em;
-	-webkit-border-radius:4em;
-	border-radius:4em;
-  }  */
-
-  /*.green.button{
-   color:#345903 !important;
-   border:1px solid #96a37b !important;	
-   background-color: #79be1e;	
-   background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(162,211,30,1) 0,rgba(162,211,30,0) 100px),-moz-linear-gradient(#82cc27, #74b317);
-   background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(162,211,30,1)), to(rgba(162,211,30,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#82cc27), to(#74b317));
- }
- .green.button:hover{
-   background-color:#89d228;	
-   background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(183,229,45,1) 0,rgba(183,229,45,0) 100px),-moz-linear-gradient(#90de31, #7fc01e);
-   background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(183,229,45,1)), to(rgba(183,229,45,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#90de31), to(#7fc01e));
- }*/
-
- .blue.button{
-   color:#0f4b6d !important;	
-   border:1px solid #84acc3 !important;	
-   /* A fallback background color */
-   background-color: #48b5f2;	
-   /* Specifying a version with gradients according to */	
-   background-image:	url('../img/button_bg.png'), url('../img/button_bg.png'),
-   -moz-radial-gradient(	center bottom, circle,
-    rgba(89,208,244,1) 0,rgba(89,208,244,0) 100px),
-   -moz-linear-gradient(#4fbbf7, #3faeeb);
-   background-image:	url('../img/button_bg.png'), url('../img/button_bg.png'),
-   -webkit-gradient(	radial, 50% 100%, 0, 50% 100%, 100,
-     from(rgba(89,208,244,1)), to(rgba(89,208,244,0))),
-   -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4fbbf7), to(#3faeeb));
- }
- .blue.button:hover{
-   background-color:#63c7fe;	
-   background-image:	url('../img/button_bg.png'), url('../img/button_bg.png'),
-   -moz-radial-gradient(	center bottom, circle,
-    rgba(109,217,250,1) 0,rgba(109,217,250,0) 100px),
-   -moz-linear-gradient(#63c7fe, #58bef7);						
-   background-image:	url('../img/button_bg.png'), url('../img/button_bg.png'),
-   -webkit-gradient(	radial, 50% 100%, 0, 50% 100%, 100,
-     from(rgba(109,217,250,1)), to(rgba(109,217,250,0))),
-   -webkit-gradient(linear, 0% 0%, 0% 100%, from(#63c7fe), to(#58bef7));}
-
-   .orange.button{
-     color:#693e0a !important;
-     border:1px solid #bea280 !important;	
-     background-color: #e38d27;	
-     background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(232,189,45,1) 0,rgba(232,189,45,0) 100px),-moz-linear-gradient(#f1982f, #d4821f);
-     background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(232,189,45,1)), to(rgba(232,189,45,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#f1982f), to(#d4821f));
-   }
-   .orange.button:hover{
-     background-color:#ec9732;	
-     background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -moz-radial-gradient(center bottom, circle, rgba(241,192,52,1) 0,rgba(241,192,52,0) 100px),-moz-linear-gradient(#f9a746, #e18f2b);
-     background-image:url('../img/button_bg.png'), url('../img/button_bg.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(241,192,52,1)), to(rgba(241,192,52,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9a746), to(#e18f2b));
-   }		
-
-   #downaldText{
-    padding:2px;
-  }
-
   .carousel {
     height:auto !important;
   }
@@ -182,21 +80,14 @@ div #content{
 .Fade {
   overflow: hidden; 
 }
-#adress {
+.adress {
   padding:5px;
   text-align: center;
 }
 <!-- левый блок блок-->
+/**/
 
-#info, #form, #contact{
-  height:auto;
-  padding-bottom: 10px;
-  text-align:center;
-}
-
-#autorButton{
-  height:60px;
-  width:90px; 
+.autorButton{  
   cursor:pointer;
   display: block;
   margin:  10px auto 10px auto;
@@ -235,17 +126,14 @@ div #content{
   display: block;
   margin:  10px auto 10px auto;
 }
-div#sideLeft p{
+.sideLeft {
+  text-align: center;
+}
+.contact{
   text-align: center;
   margin:auto;
-}
-div#info {
-  font-size: 14px;
-  font-style: normal;  
-}
+  margin:10px auto 10px auto; 
 
-#ModalF{
-  margin:10px auto 10px auto;  
 }
 <!-- правый блок-->
 
@@ -254,65 +142,66 @@ div#info {
 }
 .question {
 }
-div#ask-answer {
+#ask-answer {
   background: url('../img/ask-answer.png') no-repeat;  
   width: 50px; 
   height: 50px;
   display: block;
   margin: 10px auto auto auto;
 }
-
-
-#footer-image {
+.footer-image {
   display: block;
   margin:  0 auto 0 auto; 
 }
-#footer-text  { 
+.footer-text  { 
   padding: 10px;
   width: 100%;  
   text-align: center;
 }
-
 <!--ШРИФТЫ->
 
-div #content {
 
-}
-.legend-text  {
-  font-size:  18px;  
-  font-weight:  bold;
-  text-align: center;
-  color: #ffffff;
-} 
-.downald-text  {
-  /*font-family: 'Courier New Bold', Monaco, monospace;*/
-  font-size:  14px; 
-  font-weight:  bold;
-  text-align: center;
-  color: #ffffff;
-} 
 
-div#sideRight h4 {
- color: #330033;
- /*font-family: 'Courier New Bold', Monaco, monospace;*/
- font-size:  20px;
- /*font-style: italic;*/
- font-weight:  bold;
- text-align: center; 
-}  
-div#sideRight p{
+.sideRight p{
   color: #330033;
- /* font-family: 'Courier New Bold', Monaco, monospace;*/
-  font-size:14px;
- /* font-style:italic;*/
+  font-size:14px; 
   line-height:1em;
   text-indent:10px;
   /*font-weight:bold;*/
 } 
-div#sideRight , p span.answer {
-  color: #003300;} 
+.sideRight  p span.answer {
+  color:green;
+} 
+.sideRight h4 {
+ color: #330033;
+ font-size:  20px;
+ font-weight:  bold;
+ text-align: center; 
+}  
 
-#footer-text  a{ 
+.sideLeft p{
+  text-align: center;
+  margin:auto;
+  font-size: 14px;
+  font-style: normal;  
+}
+.downald-text  {
+   font-size:  14px; 
+  font-weight:  bold;
+  text-align: center;
+  color: #ffffff;
+} 
+.legend-text  {
+  font-size:  16px;  
+  font-weight:  bold;
+  text-align: center;
+  color: #ffffff;
+} 
+.footer  a{ 
   color:white;
   text-decoration: none;
 }
+/*.headerText{
+  color: #ffffff;
+  font-size: 55px;
+}*/

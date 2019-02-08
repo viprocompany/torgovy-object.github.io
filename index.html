@@ -13,27 +13,30 @@
 		<!--БЛОК ПРИВЕТСТВИЕ-->
 		
 		<!--БЛОК ХЕДЕР-->
-		<div class="row  border-dark border  cont text-center" id="header">			
+		<div class="row  border-dark border  cont header  " >			
 				<img src="img/header2.jpg" alt="магазин" class="rounded img-fluid float-center header-image"> <!-- с закругленными углами  ,float-center выравнивание по центру-->			
+				<!-- <div class="row headerText ">
+					<h1  text-center>торговый объект</h1>
+				</div> -->
 		</div>
 		
 		
 		<!-- БЛОК ЛЕГЕНДА -->
 		<!--описание-->
-		<div class="row border border-info rounded mg-auto cont " id="legend">
+		<div class="row border border-info rounded mg-auto bg-primary cont legend">
 			<div class="col-12">
-				<h4 class="text-center legend-text">"Торговый объект" это  бесплатная программа,  с которой легко считать расходы и увеличивать ваши доходы. <br><span style="color: #FF7A3E; "> Деньги любят счёт!</span></h4>
+				<h4 class="text-center legend-text">"Торговый объект" это  бесплатная программа,  с которой легко считать расходы и увеличивать ваши доходы. <br>Деньги любят счёт!</h4>
 			</div>
 		</div>
 		<!--БЛОК КОНТЕНТ-->
-		<div class="row cont "  id="content">	
+		<div class="row cont content"  >	
 			<!--КОНТЕНТ центр глючат скобки в Sublime-->
-			<div class="col-12  col-md-7 order-md-2 ml-auto mr-auto d-flex flex-column  border-dark border  rounded" id="center" >
+			<div class="col-12  col-md-7 order-md-2 ml-auto mr-auto d-flex flex-column  border-dark border  rounded colorContent" id="center" >
 				
 				<!--кнопка-->
-				<div class="row border" id="downald">
+				<div class="row border downald" >
 					<div class="col-12">
-					<p><button id="downaldButton" class="btn bg-success btn-xl btn-block downald-text">
+					<p><button class="btn bg-success btn-xl btn-block downaldButton  downald-text">
 					<span class="badge badge-light badge-pill ">Скачать</span> <span style="color:#ffffff;">бесплатную программу "Торговый объект"</span></button></p>
 					</div>												
 				</div>
@@ -173,64 +176,64 @@
 				</div>  
 			</div>	
 			<div class="row">
-				<div class="col-12" id="adress">
+				<div class="col-12 adress" >
 					<p>torgovy.object@gmail.com</p>
 				</div>
-			</div>		 		
-			
+			</div>			
 		</div>
 
 		<!--КОНТЕНТ левая часть -->
-		<div class="col-3 order-md-1 col-md-2   ml-auto border border-info  rounded " id="sideLeft">
-			<div class="col-12">
-				<div class="p-2 d-flex flex-column justify-content-center" id="info">   
-					<div class="" id="instagram"></div>
-					<div class="row" id="insta">
-						<p><a href="#">torgovy_object</a></p>
-					</div>
-					<div class="" id="vkontakte"></div>
-					<div class="row" id="vk">
-						<p><a href="#">torgovy_object</a></p>
-					</div> 
-					<div class="" id="facebook"></div>
-					<div class="row" id="face">
-						<p><a href="#">torgovy_object</a></p>
-					</div>
+		<div class="col-3 order-md-1 col-md-2 ml-auto text-center  border border-info  rounded colorContent sideLeft" >
 
-				</div>	
+			<div class="" id="instagram">						
 			</div>
-			<div class="row"  id="contact">
-				<!-- Button trigger modal -->
-				<div class="mx-auto">
-					<p><button type="button" class="button blue" data-toggle="modal" data-target="#ModalF" id="autorButton">
-					вопрос</button></p> <!-- data-toggle="modal"  запрограммированное в Bootstrap по умолчанию модальное окно с ID нашего окна data-target="#Modal"-->
-					<!-- Modal -->
-				</div>
-				<div class="modal fade" id="ModalF">  <!-- fade окно изначально скрыто -->
-					<div class="modal-dialog modal-dialog-center modal-dialog-lg"> <!-- диалоговое окно можно добавить позиционирование modal-dialog-center и размер modal-dialog-lg или sm -->
-						<div class="modal-content"> <!-- задает размеры окна -->
-							<div class="modal-header">
-								<h5 class="modal-title">Заполните форму и отправьте сообщение</h5>						
-							</div>
-							<div class="modal-body"> 
-								<form  id="formValidation">
-									<div class="form-group row">
-										<label  class="col-3" for="exampleInputEmail">Email адрес</label>
-										<input type="email" class="form-control col-9" id="exampleInputEmail" required placeholder="Email адрес" >
-									</div>
-									<div class="form-group row">
-										<label class="question col-3" for="name">введите  имя</label>
-										<input class="form-control col-9" type="text" name="name" id="name" maxlength="30" size="35" placeholder="имя" required pattern="^[a-zA-Zа-яА-ЯёЁІіЇїЄєҐґ']+$" >
-									</div>
-									<div class="form-group row">
-										<label class="question col-3 tp" for="text"><span class="ask">Задайте вопрос :</span></label>
-										<p><textarea name="text" id="text" cols="60" rows="5" required placeholder="введите текст ..." ></textarea></p> 
-									</div>
-									<button type="submit" class="button  green">Отправить сообщение</button>
-								</form>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="button orange" data-dismiss="modal">Закрыть</button>					
+			<div class="row" id="insta">
+				<p><a href="#">torgovy object</a></p>
+			</div>
+			<div class="" id="vkontakte">						
+			</div>
+			<div class="row" id="vk">
+				<p><a href="#">torgovy object</a></p>
+			</div> 
+			<div class="" id="facebook">						
+			</div>
+			<div class="row" id="face">
+				<p><a href="#">torgovy object</a></p>
+			</div>											
+			<div class="row ">			
+				<div class=" contact">
+					<!-- Button trigger modal -->
+					<div class="mx-auto">
+						<p><button type="button" class="btn btn-primary autorButton" data-toggle="modal" data-target="#ModalF">
+						задать вопрос</button></p> <!-- data-toggle="modal"  запрограммированное в Bootstrap по умолчанию модальное окно с ID нашего окна data-target="#Modal"-->
+						<!-- Modal -->
+					</div>
+					<div class="modal fade" id="ModalF">  <!-- fade окно изначально скрыто -->
+						<div class="modal-dialog modal-dialog-center modal-dialog-lg"> <!-- диалоговое окно можно добавить позиционирование modal-dialog-center и размер modal-dialog-lg или sm -->
+							<div class="modal-content"> <!-- задает размеры окна -->
+								<div class="modal-header">
+									<h5 class="modal-title">Заполните форму и отправьте сообщение</h5>						
+								</div>
+								<div class="modal-body"> 
+									<form  id="formValidation">
+										<div class="form-group row">
+											<label  class="col-3" for="exampleInputEmail">Email адрес</label>
+											<input type="email" class="form-control col-9" id="exampleInputEmail" required placeholder="Email адрес" >
+										</div>
+										<div class="form-group row">
+											<label class="question col-3" for="name">Введите  имя</label>
+											<input class="form-control col-9" type="text" name="name" id="name" maxlength="30"  placeholder="имя" required pattern="^[a-zA-Zа-яА-ЯёЁІіЇїЄєҐґ']+$" >
+										</div>
+										<div class="form-group row">
+											<label class="question col-3" for="text"><span class="ask">Задайте вопрос :</span></label>
+											<p><textarea  class="form-control form-control-lg" name="text" id="text" required placeholder="введите текст ..." ></textarea></p> 
+										</div>
+										<button type="submit" class="btn btn-success">Отправить сообщение</button>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Закрыть</button>	
+								</div>
 							</div>
 						</div>
 					</div>
@@ -242,7 +245,7 @@
 		</div>
 
 		<!--КОНТЕНТ правая часть-->
-		<div class="col-9 col-md-2  p-1 mr-auto  order-md-3    p-1   border-info border  rounded " id="sideRight">
+		<div class="col-9 col-md-2  p-1 mr-auto  order-md-3    p-1   border-info border  rounded colorContent sideRight" >
 			<div id="ask-answer"></div>
 			<h4>вопрос-ответ</h4> 
 			<p>Вопрос: Почему после ввода данных о поставке или о продаже при формировании отчета отображаются не все данные?</p>
@@ -253,10 +256,10 @@
 	</div>
 
 	<!--ПОДВАЛ-->
-	<div class="row  " id="footer">
-		<div id="footer-image">
+	<div class="row  footer" >
+		<div class="footer-image text-center">
 			<img src="img/footer2.jpg" alt="" class="rounded img-fluid float-center border-dark border">
-			<p id="footer-text">
+			<p >
 				<a href="#ViPro">Copyright © 2018 ViPro Studio</a>
 			</p>
 		</div>
