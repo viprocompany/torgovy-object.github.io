@@ -8,7 +8,7 @@ body {
   height: auto;
 }
 .cont{ 
-max-width:3760px !important;
+  max-width:3760px !important;
 }
 
 .header{
@@ -22,42 +22,54 @@ max-width:3760px !important;
   top: 15px;
   width: 100%;
   height: 50%;
-}*/
-.legend{  
-  padding: 10px;
-  /*background-color:#138E74;*/
-  margin:  0 auto 0 auto; 
-}
-.content{
- height:auto ;
- margin-top: 20px;
- margin-bottom:5px; 
- margin:  10px auto 0 auto;
+  }*/
+  .legend{  
+    padding: 10px;
+    background-color:#00593F;
+    margin:  0 auto 0 auto; 
+  }
+  .content{
+   height:auto ;
+   margin-top: 20px;
+   margin-bottom:5px; 
+   margin:  10px auto 0 auto;
 
-}
-.colorContent{
+ }
+ .colorContent{
+ 
   background-color:#E9FDFD;
+/*  background-color:#EDFFFF;*/
 }
 .downald{
   /*background-color: #FF7A3E;*/
   padding:2px;
 }
 .downaldButton { 
+
   cursor:pointer;
   text-align: center;
   margin:10px auto 10px auto; 
 }
-  
-.card-header{
-  background-color: #FF7A3E;
+.btn-rounded{
+ border-radius:20px;
 }
+.card-header{
+   background-color:#D5501A
+ 
+/*  background-color: #FF7A3E;*/
+}
+ .card-header button .btn-rounded{
+  border-radius: 19px;
+ }
 .card-header .btn-link{
+  
   color:#ffffff;
   text-decoration: none;
+
 }
-  .carousel {
-    height:auto !important;
-  }
+.carousel {
+  height:auto !important;
+}
 .carousel-inner img {
   display: block;
   max-width: 500px !important;
@@ -69,12 +81,14 @@ max-width:3760px !important;
   padding:5px;
   margin: 0 auto;
   text-align: center;
+  font-size: 24px;
+
 }
 .carousel-indicators  {
   visibility:hidden;  
 }
 
- .carousel-indicators li:hover {
+.carousel-indicators li:hover {
   cursor: pointer;
 }
 .Fade {
@@ -162,35 +176,36 @@ max-width:3760px !important;
 
 
 
-.sideRight p{
-  color: #330033;
+
+
+
+.sideRight p{ 
   font-size:14px; 
   line-height:1em;
   text-indent:10px;
   /*font-weight:bold;*/
 } 
-.sideRight  p span.answer {
-  color:green;
-} 
 .sideRight h4 {
- color: #330033;
+ color: #00593F;
  font-size:  20px;
  font-weight:  bold;
  text-align: center; 
 }  
-
+.sideRight  p span.answer {
+  color:#00593F;
+} 
+.downald-text  {
+ font-size:  14px; 
+ font-weight:  bold;
+ text-align: center;
+ color: #ffffff;
+} 
 .sideLeft p{
   text-align: center;
   margin:auto;
   font-size: 14px;
   font-style: normal;  
 }
-.downald-text  {
-   font-size:  14px; 
-  font-weight:  bold;
-  text-align: center;
-  color: #ffffff;
-} 
 .legend-text  {
   font-size:  16px;  
   font-weight:  bold;
