@@ -1,0 +1,46 @@
+<!--ШРИФТЫ->
+.sideRight p{ 
+  font-size:14px; 
+  line-height:1em;
+  text-indent:10px;
+} 
+.sideRight h4 {
+ color: #00593F;
+ font-size:  20px;
+ font-weight:  bold;
+ text-align: center; 
+}  
+.sideRight dd{
+  color:#00593F;
+}
+.downald-text  {
+ font-size:  14px; 
+ font-weight:  bold;
+ text-align: center;
+ color: #ffffff;
+}  
+.downald-text  .badge-pill{
+  font-size:  18px; 
+}
+.sideLeft p{
+  text-align: center;
+  margin:auto;
+  font-size: 14px;
+  font-style: normal;  
+}
+.messages{
+ text-transform: uppercase;
+ font-weight:  bold;
+ text-align: center;  
+}
+.legend-text {
+  font-size:  16px;  
+  font-weight:  bold;
+  text-align: center;
+  color: #ffffff;
+} 
+.copyright  a{ 
+  text-decoration: none;
+  color: #ffffff;
+  font-size:  12px; 
+}

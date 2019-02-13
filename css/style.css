@@ -1,8 +1,10 @@
 @import url('reset.css');
+@import url('typography.css'); 
+@import url('https://fonts.googleapis.com/css?family=Andika');
 body {    
   background-color:#2C2E32; 
-  font-family:Lucida Sans Unicode, Lucida Grande, Arial, Arial, Helvetica, sans-serif;
-  <!--background-image: url("../img/body.png");--> 
+  font-family: 'Andika',Lucida Sans Unicode, Lucida Grande, sans-serif;
+/*background-image: url("../img/body.png"); */
 }
 .container{
   height: auto;
@@ -16,13 +18,6 @@ body {
   margin:  0 auto 0 auto; 
   /* position:relative;*/
 }
-/* .header .headerText h1{  
-  position: absolute;
-  margin:10 px auto 10 px auto;
-  top: 15px;
-  width: 100%;
-  height: 50%;
-  }*/
   .legend{  
     padding: 10px;
     background-color:#00593F;
@@ -35,11 +30,11 @@ body {
    margin:  10px auto 0 auto;
 
  }
- .colorContent{
- 
+ .colorContent{ 
   background-color:#E9FDFD;
 /*  background-color:#EDFFFF;*/
 }
+
 .downald{
   /*background-color: #FF7A3E;*/
   padding:2px;
@@ -58,9 +53,7 @@ body {
  
 /*  background-color: #FF7A3E;*/
 }
- .card-header button .btn-rounded{
-  border-radius: 19px;
- }
+ 
 .card-header .btn-link{
   
   color:#ffffff;
@@ -98,6 +91,7 @@ body {
   padding:5px;
   text-align: center;
 }
+
 <!-- левый блок блок-->
 /**/
 
@@ -107,6 +101,7 @@ body {
   margin:  10px auto 10px auto;
   text-align:center;
 }
+
 #reklama{
   height:auto;
   padding-top: 10px;
@@ -140,6 +135,7 @@ body {
   display: block;
   margin:  10px auto 10px auto;
 }
+
 .sideLeft {
   text-align: center;
 }
@@ -147,76 +143,28 @@ body {
   text-align: center;
   margin:auto;
   margin:10px auto 10px auto; 
-
 }
-<!-- правый блок-->
-
 .ask {
   margin-left: 5px;   
 }
-.question {
+.question{
+
 }
-#ask-answer {
+.footer{
+  display: block;
+  margin:  0 auto 0 auto; 
+}
+.copyright  { 
+  padding: 10px;
+  width: 100%;  
+  text-align: center;
+}
+<!-- правый блок-->
+#faq {
   background: url('../img/ask-answer.png') no-repeat;  
   width: 50px; 
   height: 50px;
   display: block;
   margin: 10px auto auto auto;
 }
-.footer-image {
-  display: block;
-  margin:  0 auto 0 auto; 
-}
-.footer-text  { 
-  padding: 10px;
-  width: 100%;  
-  text-align: center;
-}
-<!--ШРИФТЫ->
 
-
-
-
-
-
-.sideRight p{ 
-  font-size:14px; 
-  line-height:1em;
-  text-indent:10px;
-  /*font-weight:bold;*/
-} 
-.sideRight h4 {
- color: #00593F;
- font-size:  20px;
- font-weight:  bold;
- text-align: center; 
-}  
-.sideRight  p span.answer {
-  color:#00593F;
-} 
-.downald-text  {
- font-size:  14px; 
- font-weight:  bold;
- text-align: center;
- color: #ffffff;
-} 
-.sideLeft p{
-  text-align: center;
-  margin:auto;
-  font-size: 14px;
-  font-style: normal;  
-}
-.legend-text  {
-  font-size:  16px;  
-  font-weight:  bold;
-  text-align: center;
-  color: #ffffff;
-} 
-.footer  a{ 
-  color:white;
-  text-decoration: none;
-}
-/*.headerText{
-  color: #ffffff;
-  font-size: 55px;
-}*/

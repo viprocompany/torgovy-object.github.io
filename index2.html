@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="discription" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> <link rel="stylesheet" href="css/bootstrap.min.css">  
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document Bootstrap4</title>
+</head>
+<body>
+	<div class="row">				
+		<div class="col-12" id="accordion">
+			<div class="card">
+				<div class="card-header" id="headingOne">
+					<h5>
+						<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Кратко о программе</button>
+					</h5>
+				</div>
+				<div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
+					<div class="card-body">
+						<p>Данная программа является абсолютно бесплатной и предназначена для использования в торговле товарами, кроме тех, количество которых 	вводится числами с запятой(весовых и мерных товаров).</p>
+						<p>Анализ наценки и доходности по каждой группе ,модели , производителю, поставщику и другим критериям отбора товара, переучёт как в единицах товара так и в денежном выражении как в нацианольной так и в иностранной валюте, прибыль, рентабельность.</p>
+						<p>  В приложении есть минимальная заполненная база данных для проверки работоспособности и обучения работе с программой.  </p> 	
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingTwo">
+					<h5>
+						<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Требования к установке</button>
+					</h5>
+				</div>
+				<div class="collapse"  id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
+					<div class="card-body">
+						<p> Данный проект создан для работы при условии , что на вашем компьютере установлено програмное обеспечение Майкрософт Офис  2007 или более новая версия и компонент этой программы  Access.</p>
+						<p>	Запускается файлом WpfAppTO.exe из каталога без установки, после копирования всей папки "torgovy_object_2019_релиз" из архива в любое удобное место на компьютере. </p>
+						<p>	Размер распакованного приложения 8 МБ + 7МБ файл для заполнения новой базы. Размер запакованного архива для скачивания 9,5МБ. Пароль для входа в программу в файле "пароль". 
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingThree">
+					<h5>
+						<button class="btn btn-link  collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Смотреть видеоуроки</button>
+					</h5>
+				</div>
+				<div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion">
+					<div class="card-body">
+						<div id="videoForm">			  
+							<div id="ytoube">
+								<p>Обзор фунций программы</p>								
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/yNcca0Ic8Uw"></iframe>
+								<p>Заполнение базы с нуля</p>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/yNcca0Ic8Uw"></iframe>
+							</div>		
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				
+				<div class="card-header" id="headingFour">
+					<h5>
+						<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Читать инструкцию </button>
+					</h5>
+				</div>
+				<div class="collapse" id="collapseFour" aria-labelledby="headingFour" 
+				data-parent="#accordion">
+				<div class="card-body">								
+					<div data-spy="scroll" data-target="#navbar2"  
+					style="position:relative; height:800px; overflow: auto;">	
+					<div >	
+						<h4 id="sol">sol</h4> 									
+						<p>There are many variations of passages of Lorem Ipsum available,</p>								
+						<p>There are many variations of passages of Lorem Ipsum available,</p> 
+						<h4 id="start">start</h4> 
+						<p>There are many variations of passages of Lorem Ipsum available,</p>	
+						<h4 id="one">one</h4>
+						<p>There are many variations of passages of Lorem Ipsum available,</p>
+						<h4 id="two">two</h4>
+						<p>	There are many variations of passages of Lorem Ipsum available,</p>                        
+						<p>There are many variations of passages of Lorem Ipsum available,</p>
+						<h4 id="end">end</h4>
+					</div>						
+				</div>		      
+			</div>	
+		</div>
+	</div>
+</div>
+</div>
+	<!-- <nav id="navbar2" class="navbar navbar-light bg-light">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+					<a class="nav-link" href="#sol">sol</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#start">start</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" >Dropdown</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#one">one</a>
+						<a class="dropdown-item" href="#two">two</a>
+						<div role="separator" class="dropdown-divider">	
+						</div>
+						<a class="dropdown-item" href="#end">end</a>
+					</div>
+				</li>
+			</ul>
+		</nav>							
+		<div id="text">	
+			<h4 id="sol">sol</h4> 									
+			<p>There are many variations of passages of Lorem Ipsum available,</p>								
+			<p>There are many variations of passages of Lorem Ipsum available,</p> 
+			<h4 id="start">start</h4> 
+			<p>There are many variations of passages of Lorem Ipsum available,</p>	
+			<h4 id="one">one</h4>
+			<p>There are many variations of passages of Lorem Ipsum available,</p>
+			<h4 id="two">two</h4>
+			<p>	There are many variations of passages of Lorem Ipsum available,</p>                        
+			<p>There are many variations of passages of Lorem Ipsum available,</p>
+			<h4 id="end">end</h4>
+		</div>		
+ -->
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>	
+<script src="js/script.js"></script>
+</body>
+</html>
