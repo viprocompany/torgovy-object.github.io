@@ -119,21 +119,21 @@ body {
   width: 50px; 
   height: 30px;
   display: block;
-  margin:  10px auto 10px auto;
+  margin:  10px 10px 10px auto;
 }
 #instagram{
   background: url('../img/instagram.jpg') no-repeat;  
   width: 50px; 
   height: 30px;
   display: block;
-  margin:  10px auto 10px auto;
+  margin:  10px auto 10px 10px;
 }
 #facebook{
   background: url('../img/facebook.jpg') no-repeat;  
   width: 50px; 
   height: 30px;
   display: block;
-  margin:  10px auto 10px auto;
+  margin:  10px 10px 10px 10px;
 }
 
 .sideLeft {
