@@ -23,6 +23,17 @@ body {
     background-color:#00593F;
     margin:  0 auto 0 auto; 
   }
+  .legend h4 {  
+    padding-bottom: 5px;
+    margin:  5px; 
+  }
+
+  .legend{  
+    padding: 10px;
+    background-color:#00593F;
+    margin:  0 auto 0 auto; 
+  }
+
   .content{
    height:auto ;
    margin-top: 20px;
@@ -31,7 +42,7 @@ body {
 
  }
  .colorContent{ 
-  background-color:#E9FDFD;
+  background-color:#EBEDF1;
 /*  background-color:#EDFFFF;*/
 }
 
@@ -65,8 +76,10 @@ body {
 }
 .carousel-inner img {
   display: block;
-  max-width: 500px !important;
-  max-height:350px !important;
+  max-width: 1000px !important;
+  max-height: 662px !important;
+  /* max-width: auto ;
+  max-height: auto ; */
   margin: 0 auto;
   
 }
@@ -92,16 +105,29 @@ body {
   text-align: center;
 }
 
-<!-- левый блок блок-->
+<!--правый блок-->
 /**/
 
 .autorButton{  
+  
   cursor:pointer;
   display: block;
   margin:  10px auto 10px auto;
   text-align:center;
-}
 
+}
+.modal-content {
+	color:#fff;
+	background-color: #2C2E32;
+	opacity:0.9;
+}
+.modal-header {
+	color:#fff;
+}
+.modal-content {
+	background-color: #293A43;
+	opacity:0.85;
+}
 #reklama{
   height:auto;
   padding-top: 10px;
@@ -168,3 +194,77 @@ body {
   margin: 10px auto auto auto;
 }
 
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) 
+{
+ 
+  .legend img{  
+    max-width: 75px;
+    height: auto;        
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	{
+    .legend-text {
+      font-size:  12px;  
+      font-weight:  bold;    
+    } 
+    .legend p {
+      font-size:  12px;  
+     } 
+    .legend img{  
+      max-width: 50px;
+      height: auto;        
+    }
+  }
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)	
+{
+  .legend-text {
+    font-size:  11px;  
+    font-weight:  bold;  
+  } 
+  .legend p {
+    font-size:  12px;   
+    } 
+  .legend img{  
+    max-width: 30px;
+    height: auto;    
+      }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+{}
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+{}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+{}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+{}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+{}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+{}
