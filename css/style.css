@@ -71,6 +71,11 @@ body {
   text-decoration: none;
 
 }
+.card-body p{
+text-indent: 20px;
+margin-bottom: 10px;
+}
+
 .carousel {
   height:auto !important;
 }
