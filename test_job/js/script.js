@@ -16,7 +16,7 @@ $(document).ready(function(){
      objTv = obj2.items; 
      objBi = obj3.items; 
 
-	// var out = '';
+      	// var out = '';
 	// for (var key in obj){ 
 	// 	 <header>Выберите товар для заказа</header>	
 	// 	 <article><div class="subitems">
@@ -38,14 +38,15 @@ $(document).ready(function(){
   	outType ="";
     outDesc ="";
     outPrice = "";
-    outImg = "";
+  
   	for (var key in obj){ 
   	outType+='<option data-art="'+key+'">'+data[key]['name']+'</option>';	
     		// выбераем дефолтное описание, цену , изображение  выбранной модели	 телефона 		
 	  		$.each(obj, function(key, val){
-	  			outDesc ='<span data-desc="'+objSmart[0].name+'">'+objSmart[0].desc+'</span>'; 	
-	  			outPrice = '<span  data-price="'+objSmart[0].price+'">'+objSmart[0].price+' <small>бел. руб.</small></span>'
-	  			outImg ='<img style="height: 300px; margin-left:0;" data-img="'+objSmart[0].name+'" src="img/'+objSmart[0].img+'">';
+	  			// outDesc ='<span data-desc="'+objSmart[0].name+'">'+objSmart[0].desc+'</span>'; 	
+	  			// outPrice = '<span  data-price="'+objSmart[0].price+'">'+objSmart[0].price+' <small>бел. руб.</small></span>'
+	  			// outImg ='<img style="height: 300px; margin-left:0;" data-img="'+objSmart[0].name+'" src="img/'+objSmart[0].img+'">';
+
 
   		});   	
   	}
@@ -55,12 +56,9 @@ $(document).ready(function(){
   	$(".type_1").html(outType);
 // $(".model_1").html(outType);
   	// выводим списрк mоделей   
-  	    // выводим описание выбранной модели 
-	  	 $("#desc_1").html(outDesc);	
-	  	   // выводим цену выбранной модели 
-	  	   $("#price_1").html(outPrice);	
-	  	 // выводим картинку 
-	  	  $("#img_1").html(outImg);	
+
+	  	
+	  	
   	}
 
  // выбор артикула типа товара для последующего выбора моделей товара по типу товара
@@ -70,10 +68,12 @@ $(document).ready(function(){
   	// переменная атрибут артикул по его значению  определяем группы товара в селекте
   		articul = $(this).attr('data-art');
     console.log(articul);   
+			
 //  вывод моделей товара в зависимости от типа товара  
     for (var key in obj){ 
     	// переменная поля моделей товара
-    		var outModel ="";    			 
+    		var outModel ="";
+    		  outImg = "";     			 
   		$.each(obj, function(key, val){	
   			// по атрибуту артикула в поле типа товара определяем тип товара и выводим модели этого типа
   			if(articul == "0"){  	
@@ -82,24 +82,88 @@ $(document).ready(function(){
 		    // заполняем селекты для моделей опциями значений моделей при клике на тип товара
 		    $('.model_1').empty();
 				$.each(outModel, function(i, p) {
-		    $('.model_1').append($('<option></option>').val(p).html(p));
+		    $('.model_1').append($('<option></option>').val(i).html(p));
 		    });
+		       $('.model_1 option').on('click',function(){
+			  	// переменная атрибут артикул по его значению  определяем модель товара в селекте
+			   	articul_model = $(this).attr('value');
+			  	console.log(articul_model);     
+			  	     //  РАБОТАЕТ!!!!!!!!!!!
+	  	     objImage = objSmart[articul_model].img; 
+	  	     console.log(objImage);			  	     
+	  	    outImg ='<img style="height: 300px; margin-left:0;" data-img="'+objSmart[articul_model].name+'" src="img/'+objImage+'">';
+ 				// выводим картинку 
+	  	  $("#img_1").html(outImg);	
+	  	  // ВЫВОД ЦЕНЫ
+	  	  	outPrice = '<span  data-price="'+objSmart[articul_model].price+'">'+objSmart[articul_model].price+' <small>бел. руб.</small></span>'
+			    // выводим цену выбранной модели 
+	  	   $("#price_1").html(outPrice);	
+	  	   // ВЫВОД ОПИСАНИЯ
+	  	   	outDesc ='<span data-desc="'+objSmart[articul_model].name+'">'+objSmart[articul_model].desc+'</span>'; 	
+  	    // выводим описание выбранной модели 
+	  	     $("#desc_1").html(outDesc);	
+			  	 //    $.each(objSmart,function(key,data) {
+			  	 //    	console.log('Раздел: ' + key);
+			  	 //    	$.each(data,function(key,data) {
+			  	 //      	console.log('тип: '  + data);
+			  	 //    		$.each(data,function(index,value) {
+			  	 //          console.log('модель = ' + value['name'] + '; картинка = '+ value['img']);
+			  	 //    });
+       //      }); 
+			    // });
+	      }); 
   			}
 
   			if(articul == "1"){
   			let outModel = objTv.map(({ name }) => name);
 		    $('.model_1').empty();
 				$.each(outModel, function(i, p) {
-		    $('.model_1').append($('<option></option>').val(p).html(p));
+		    $('.model_1').append($('<option></option>').val(i).html(p));
 		    });	
+		        $('.model_1 option').on('click',function(){
+			  	// переменная атрибут артикул по его значению  определяем модель товара в селекте
+			  	articul_model = $(this).attr('value');
+			  	console.log(articul_model);  
+			  	 objImage = objTv[articul_model].img; 
+	  	     console.log(objImage);			  	     
+	  	    outImg ='<img style="height: 300px; margin-left:0;" data-img="'+objTv[articul_model].name+'" src="img/'+objImage+'">';
+ 				// выводим картинку 
+	  	  $("#img_1").html(outImg);	
+			   // ВЫВОД ЦЕНЫ
+	  	  	outPrice = '<span  data-price="'+objTv[articul_model].price+'">'+objTv[articul_model].price+' <small>бел. руб.</small></span>'
+			    // выводим цену выбранной модели 
+	  	   $("#price_1").html(outPrice);
+	  	    // ВЫВОД ОПИСАНИЯ
+	  	   outDesc ='<span data-desc="'+objTv[articul_model].name+'">'+objTv[articul_model].desc+'</span>'; 	
+  	    // выводим описание выбранной модели 
+	  	     $("#desc_1").html(outDesc);
+			    });
 
   			}
   			if(articul == "2"){
   			let outModel = objBi.map(({ name }) => name);
 		    $('.model_1').empty();
 				$.each(outModel, function(i, p) {
-		    $('.model_1').append($('<option></option>').val(p).html(p));
+		    $('.model_1').append($('<option></option>').val(i).html(p));
 		    });	
+		       $('.model_1 option').on('click',function(){
+			  	// переменная атрибут артикул по его значению  определяем модель товара в селекте
+			  	articul_model = $(this).attr('value');
+			  	console.log(articul_model);   
+			  	 objImage = objBi[articul_model].img; 
+	  	     console.log(objImage);			  	     
+	  	    outImg ='<img style="height: 300px; margin-left:0;" data-img="'+objBi[articul_model].name+'" src="img/'+objImage+'">';
+ 				// выводим картинку 
+	  	  $("#img_1").html(outImg);	
+			   // ВЫВОД ЦЕНЫ
+	  	  	outPrice = '<span  data-price="'+objBi[articul_model].price+'">'+objBi[articul_model].price+' <small>бел. руб.</small></span>'
+			    // выводим цену выбранной модели 
+	  	   $("#price_1").html(outPrice);
+	  	   	 // ВЫВОД ОПИСАНИЯ
+	  	   outDesc ='<span data-desc="'+objBi[articul_model].name+'">'+objBi[articul_model].desc+'</span>'; 	
+  	    // выводим описание выбранной модели 
+	  	     $("#desc_1").html(outDesc);
+			    });
   			}
   						// outModel +='<option >'+ val.items[0].name + '</option>';	
   			  					// console.log(obj1.items);	
@@ -108,6 +172,7 @@ $(document).ready(function(){
   		}); 
     }
   });  
+
 });
 };
 
