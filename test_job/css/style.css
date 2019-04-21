@@ -1,0 +1,86 @@
+
+@import url("normalize.css");
+
+ html {   
+      font-family: sans-serif;
+      line-height: 1.15;
+      box-sizing: border-box;   
+    }
+    body {
+      background: #F1f1f2;    
+   /*   padding: 0;    */ 
+      margin: 0;
+      font-family: 'FontAwesome';
+      overflow-x: hidden;
+    }
+
+.type, .model, .desc, .price, .count, .order {
+  display: block;
+}
+
+.grid_1 
+{  
+  display:grid; 
+  grid-template-areas: 
+  "header"  
+  "aside"
+  "article"
+  "footer"
+}
+header{
+  grid-area:header; 
+}
+article{
+  grid-area:article;
+}
+aside{
+  grid-area: aside;
+}
+footer{
+  grid-area: footer;
+}
+ .grid_1 header, article, aside, footer{
+  background-color:#698D82;
+  border: 1px solid black;
+  border-radius:5px;
+  color: #fff;
+  padding: 8px;
+  font-size: 18px;
+  font-family: fantasy;
+}
+.grid_1  div.subitems {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-gap: 10px;
+}
+.grid_1  div.subitems div {
+  background-color: red;
+}
+
+@media(min-width: 640px){
+  .grid_1{
+grid-template-columns:2fr 2fr ;
+grid-template-areas: 
+  "header header"
+  "article aside " 
+  "footer footer"
+  /*обозначили какие области где 
+  расположились и соответственно 
+  сколько фракций они заняли
+  */  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+
+    }
+
+
+ /* Medium  */
+@media only screen and (max-width: 768px) {
+ 
+    }   
+
+    /* XS */
+@media only screen and (max-width: 576px) {
+  
+    }   
