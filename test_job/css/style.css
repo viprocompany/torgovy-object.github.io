@@ -53,10 +53,36 @@ footer{
   grid-template-columns: 1fr, 1fr;
   grid-gap: 10px;
 }
-.grid_1  div.subitems div {
-  background-color: red;
-}
 
+.grid_2  {  
+ text-align: center;
+ padding: auto;
+
+ 
+}
+.card_order , .header, .footer{
+   margin: auto;
+   margin: auto;
+    width: 900px;
+    background-color: pink;
+}
+.card_order {  
+ 
+ display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card_order img{  
+float: left;
+height: 50px;
+width: auto;
+}
+    
+.close_order{
+   background-image: url(../img/basket.png);
+   height: 35px;
+   width: 35px;
+}
 @media(min-width: 640px){
   .grid_1{
 grid-template-columns:2fr 2fr ;

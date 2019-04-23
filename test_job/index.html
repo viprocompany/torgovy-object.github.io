@@ -14,28 +14,45 @@
 </head>
 <body>
 	<div id="products" class="grid_1">		
-		 <header>Выберите товар для заказа</header>	
+		 <header><h3>Выберите товар для заказа</h3></header>	
 		 <article><div class="subitems">
 		<select class="type_1">
 			<option data-art="0">Смартфоны</option>
 		</select>
 		<select class="model_1">
-			<option value="Apple iPhone XS 64GB" selected>Apple iPhone XS 64GB</option>
+			<option value="0" ></option>
+			<!-- <option value="0" >Apple iPhone XS 64GB</option> -->
 		</select>
 			<p>Описание: </p>
-		<span id="desc_1">Изумительный дисплей Super Retina занимает всю переднюю панель iPhone. Использование особых технологий OLED позволило создать HDR-дисплей с великолепной цветопередачей, глубокими черными цветами, впечатляющей яркостью и контрастом. Это самые чёткие дисплеи iPhone с самой высокой плотностью пикселей.</span>
+		<span id="desc_1" data-desc="Apple iPhone XS 64GB">Изумительный дисплей Super Retina занимает всю переднюю панель iPhone. Использование особых технологий OLED позволило создать HDR-дисплей с великолепной цветопередачей, глубокими черными цветами, впечатляющей яркостью и контрастом. Это самые чёткие дисплеи iPhone с самой высокой плотностью пикселей.</span>
 		<p>Цена: </p>
-		<span id="price_1">2999<small> бел. руб.</small></span>
+		<span id="price_1" data-price="2999">2 999<small> бел. руб.</small></span>
 		<p>Количество: </p>
 		<label for="count_1"></label><input type="text" id="count_1">
 		</div></article>
-		 <aside class="image-thumbnail " id="img_1"><img style="height: 300px; margin-left:0;" data-img="0" src="img/img0_0.png"></aside>	
-		  <footer class="order"><input type="button" value="Добавить в заказ"></footer>
+		 <aside class="image-thumbnail " id="img_1">
+		 	<img style="height: 300px; margin-left:0;" data-img="0" src="img/img0_0.png">
+		 </aside>	
+		  <footer class="order">
+		  	<button  class="add" data-order-name="Apple iPhone XS 64GB" data-order-price="2999" data-order-img="img0_0.png">Добавить в заказ</button>
+		  </footer>
 	</div>
-<div id="basket" class="grid_2">
-	<div class="item_11"></div>
+	<!-- <div class="products grid_1"></div> -->
+<div id="card" class="grid_2">
+	<div class="header"><h2>Ваш заказ</h2></div>
+	<div class="card_order_2">
+<!-- 		<div class="card_order_image image-thumbnail"></div>
+		<div class="card_order_name"></div>
+		<div class="card_order_count"></div>
+		<div class="card_order_price"></div>
+		<div class="card_close"></div> -->
+	</div>	
+		<div class="footer">
+		<p>Итого:	<span id="summ"></span></p>
+	</div>
+
 </div>
-<div >
+<!-- <div >
 	  <div class="image-thumbnail " id="img" >
 	  	<img src="img/img0_0.png">
 	  </div>
@@ -50,7 +67,7 @@
    </p>
     <span id="price" style="display: block; margin-left: 200px;margin-bottom: 30px;">100$</span>
     
-</div>
+</div> -->
 <!-- <select name="" id="select" style="display: block; margin-left: 200px;margin-bottom: 30px;"></select> -->
 
 			<!-- <div id="test"></div> -->
