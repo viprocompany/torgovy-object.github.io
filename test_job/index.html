@@ -16,22 +16,24 @@
 	<div id="products" class="grid_1">		
 		 <header><h3>Выберите товар для заказа</h3></header>	
 		 <article><div class="subitems">
-		<select class="type_1">
+		 	<h4 class="h4">Группа товаров: </h4>
+		<select class="type_1 shadow">			
 			<option data-art="0">Смартфоны</option>
 		</select>
-		<select class="model_1">
+		<h4 class="h4">Товар: </h4>
+		<select class="model_1 shadow">
 			<option value="0" ></option>
 			<!-- <option value="0" >Apple iPhone XS 64GB</option> -->
 		</select>
-			<p>Описание: </p>
+		<h4 class="h4">Описание: </h4>
 		<span id="desc_1" data-desc="Apple iPhone XS 64GB">Изумительный дисплей Super Retina занимает всю переднюю панель iPhone. Использование особых технологий OLED позволило создать HDR-дисплей с великолепной цветопередачей, глубокими черными цветами, впечатляющей яркостью и контрастом. Это самые чёткие дисплеи iPhone с самой высокой плотностью пикселей.</span>
-		<p>Цена: </p>
-		<span id="price_1" data-price="2999">2 999<small> бел. руб.</small></span>
-		<p>Количество: </p>
-		<label for="count_1"></label><input type="text" id="count_1">
+		<h4 class="h4">Цена:</h4>
+		<span id="price_1" data-price="2999" class="red">2 999<small> бел. руб.</small></span>
+	
+		<label for="count_1">	<h4 class="h4">Количество: </h4></label><input class="shadow" type="text" id="count_1">
 		</div></article>
 		 <aside class="image-thumbnail " id="img_1">
-		 	<img style="height: 300px; margin-left:0;" data-img="0" src="img/img0_0.png">
+		 	<img  data-img="0" src="img/img0_0.png">
 		 </aside>	
 		  <footer class="order">
 		  	<button  class="add" data-order-name="Apple iPhone XS 64GB" data-order-price="2999" data-order-img="img0_0.png">Добавить в заказ</button>
@@ -48,9 +50,8 @@
 		<div class="card_close"></div> -->
 	</div>	
 		<div class="footer">
-		<p>Итого:	<span id="summ"></span></p>
+		<p>Итого:	<span id="summ" class="red"></span><small> бел. руб.</small></p>
 	</div>
-
 </div>
 <!-- <div >
 	  <div class="image-thumbnail " id="img" >

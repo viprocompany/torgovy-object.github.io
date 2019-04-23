@@ -1,7 +1,7 @@
-
 $(document).ready(function(){
-
+$('#count_1').val('');
 	LoadProducts();
+	
 });	
 function LoadProducts(){
   // загрузка товара на страницу
@@ -63,13 +63,13 @@ function showModel(){
 	// ОБЪЕКТ ДЛЯ ПОЛУЧЕНИЯ  ЦЕНЫ
 	objPrice = data[articul].items[articul_model].price;
 	// ВЫВОД ЦЕНЫ
-	outPrice = '<span  data-price="'+objPrice+'">'+objPrice+' <small>бел. руб.</small></span>';
+	outPrice = '<span class="red" data-price="'+objPrice+'">'+objPrice+' <small>бел. руб.</small></span>';
 	// вывод ценs выбранной модели 
 	$("#price_1").html(outPrice.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 '));
 	//  ОБЪЕКТ ДЛЯ ОБРАЩЕНИЯ К ИМЕНИ КАРТИНКИ
 	objImage = data[articul].items[articul_model].img; 
 	// console.log(objImage);			  	     
-	outImg ='<img style="height: 300px; margin-left:0;" data-img="'+objName+'" src="img/'+objImage+'">';
+	outImg ='<img  data-img="'+objName+'" src="img/'+objImage+'">';
 	// вывод картинк 
 	$("#img_1").html(outImg);	
 	
@@ -82,54 +82,67 @@ function showModel(){
 });
 }
 // ФУНКЦИЯ ДОБАВЛЕНИЯ ТОВАРА В КОРЗИНУ
+
 function addToOrder (){
- orderImage = $(this).attr('data-order-img');	
- orderName = $(this).attr('data-order-name');
- orderCount = $('#count_1').val();
- orderPrice = $(this).attr('data-order-price');
+	orderImage = $(this).attr('data-order-img');	
+	orderName = $(this).attr('data-order-name');
+	orderCount = $('#count_1').val();
+	orderPrice = $(this).attr('data-order-price');
 
-// objImageCard = "";
-// objNameCard = "";
-// objCountCard = "";
-// objPriceCard = "";
-// objClose = "";
+	objCard = "";
+	objCard +='<div class="card_order"><div class="card_order_image image-thumbnail"><img "style="height: 50px;"  src="img/'+orderImage+'"></div>';
+	objCard += '<div class="card_order_name"><h4 class="h4">'+orderName+'</h4></div>';
+	objCard += '	<div class="card_order_count"><span>'+orderCount+' шт.</span></div>';
+	objCard += '<div class="card_order_price red"><span  >'+orderPrice+' <small> руб.</small></span></div>';
+	objCard += '<a class="close_order " data-sum="'+orderCount*orderPrice+'"></a></div>	';
+	// ДОБАВИТЬ ЗАКАЗ В КОРЗИНУ ПРИ ЗАПОЛНЕННОМ ИНПУТЕ
+	if(orderCount>0){
+		$('.card_order_2').after(objCard);
+	}
+	// УДАЛИТЬ ЗАКАЗ ИЗ КОРЗИНЫ
+	$('.close_order').on('click', function(){	
+		$(this).parent().remove();	
+	})		
+	}
+addToOrder();
 
-objCard = "";
+$(document).on('click',calculate 
+	// function(){
+	//  outSumm = "";
+	//  outSumm = "22";
+ //   outSumm = $('.close_order').attr('data-sum').val();
+ //    // outSumm = $('.close_order').each(attr('data-sum'))val();
+ //  $('#summ').html(outSumm);
+ //  console.log(outSumm);
+// }
+);
 
-// objImageCard +='<img "style="height: 50px;"  src="img/'+orderImage+'">';
-// $('.card_order_image').html(objImageCard);
-// objNameCard += '<span>'+orderName+'</span>';
-// $('.card_order_name').html(objNameCard);
-// objCountCard += '<span>'+orderCount+'</span>';
-// $('.card_order_count').html(objCountCard);
-// objPriceCard += '<span  >'+objPrice+' <small>бел. руб.</small></span>';
-// $('.card_order_price').html(objPriceCard);
-// objClose += '<button class="close_order" ></button>';
-// $('.card_close').html(objClose);
-objCard +='<div class="card_order"><div class="card_order_image image-thumbnail"><img "style="height: 50px;"  src="img/'+orderImage+'"></div>';
+function calculate(){
+        var  outSumm = 0;
+ // $('.close_order').attr('data-sum').empty();
+        // outSumm = $('.close_order').attr('data-sum');
+        // outSumm = parseInt(outSumm);
 
-objCard += '<div class="card_order_name"><span>'+orderName+'</span>	</div>';
+        //      $('#summ').html(outSumm);
+        //      console.log(outSumm);
+        // $('.close_order').each(function(all){          
+        //    //  var now = $(this).attr('data-sum').html();
+        //    //  outSumm = parseInt(outSumm);
+        //    //  now = parseInt(now);
+        //    //  outSumm = outSumm+now;
+      
+        // });
 
-objCard += '	<div class="card_order_count"><span>'+orderCount+'</span></div>';
-
-objCard += '<div class="card_order_price"><span  >'+objPrice+' <small>бел. руб.</small></span></div>';
-
-objCard += '<div class="card_close"><button class="close_order" ></button></div></div>	';
-$('.card_order_2').after(objCard);
-console.log(orderImage,orderName,orderCount,orderPrice,orderCount*orderPrice);
-	
-	
-	
-		
-		
-
-// $('.close_order').on('click',function(){
-// 	$(this). удалить родитедьский блок и себя
-// })
+$('.close_order').each(function(){
+    // outSumm = $(this).attr('data-sum').empty();
+    outSumm = parseInt(outSumm);
+    outSumm += parseInt($('.close_order').attr('data-sum'));
+});
+  $('#summ').html(outSumm);
+  
+    // console.log(outSumm.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 '));
 }
-
-
-
+calculate(); 
   	
   // default
  //  var out = '';

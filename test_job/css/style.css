@@ -1,23 +1,19 @@
 
 @import url("normalize.css");
 
- html {   
-      font-family: sans-serif;
-      line-height: 1.15;
-      box-sizing: border-box;   
-    }
-    body {
-      background: #F1f1f2;    
-   /*   padding: 0;    */ 
-      margin: 0;
-      font-family: 'FontAwesome';
-      overflow-x: hidden;
-    }
-
-.type, .model, .desc, .price, .count, .order {
-  display: block;
+html {   
+  font-family: sans-serif;
+  line-height: 1.23;
+  box-sizing: border-box;   
+}
+body {
+  background: #FFF;     
+  margin: 0;     
+  overflow-x: hidden;
+  position: relative;
 }
 
+/*ВЕРХНИЙ ГРИД. ОБЩЕЕ*/
 .grid_1 
 {  
   display:grid; 
@@ -29,84 +25,222 @@
 }
 header{
   grid-area:header; 
+  text-align: left;
+  color: #576A6A;
+
 }
 article{
   grid-area:article;
 }
 aside{
   grid-area: aside;
+  padding: 0;
 }
 footer{
   grid-area: footer;
+  text-align: center;
 }
- .grid_1 header, article, aside, footer{
-  background-color:#698D82;
-  border: 1px solid black;
-  border-radius:5px;
-  color: #fff;
-  padding: 8px;
-  font-size: 18px;
-  font-family: fantasy;
+
+small, input, select{
+  color: #576A6A;
+  height: 22px;
+  box-shadow: insert 2px 2px 5px  #E0E0E0;
 }
+label{
+  padding-bottom:  1px;
+  margin: 0;
+  height: 17px;
+}
+label .h4{
+  margin-top: 5px;
+}
+input{
+  width: 85px;
+  padding: 0;
+  margin: 0;
+}
+
+h3{
+  font-size: 16px;
+  margin: 20px 0 10px 0;
+  font-weight: 100;
+}
+/*ЧЕРНЫЕ ЗАГОЛОВКИ*/
+.h4{
+  font-size: 11px; 
+  font-weight: 800;
+  color:#454D54;
+  margin: 11px 0 2px 0 ;
+}
+/*ИНФА ИЗ БАЗЫ*/
+#desc_1{
+  padding: 2px 0 -2px 0; 
+}
+#price_1{
+  font-size: 19px; 
+}
+#price_1 small{
+  font-size: 10px;  
+}
+/*СУММА КРАСНЫМ ЦВЕТОМ И ЦЕНА*/
+.red{
+  color: #FF2840;
+}
+/*КЛАСС ДЛЯ ТЕНЕЙ В ИНПУТЕ И СЕЛЕКТАХ*/
+.shadow{
+  /*box-shadow: inset 2px 2px 15px  -2px #E0E0E0;*/
+  /* box-shadow: inset 2px 0 4px #000;*/
+  /*box-shadow: 0 1px 2px #000 inset, 0 -1px 0 #000 inset;*/
+  /*box-shadow: inset 2px 0 4px #000;*/
+  box-shadow: inset 0px 0px 6px black;
+
+  /*box-shadow: 0 1px 2px rgba(0,0,0,.2) inset, 0 -1px 0 rgba(0,0,0,.05) inset;*/
+}
+
+.grid_1 header, article{
+  color: #576A6A;
+  padding: 0 2px  0  20px ;  
+  font-size: 10.5px;   
+}
+.grid_1  aside,  footer{
+  color: #576A6A;
+  padding: 0 ; 
+  font-size: 10px;   
+  margin: 0;
+}
+/*КОНТЕНТ ВЕРХНЕГО ГРИДА*/
 .grid_1  div.subitems {
   display: grid;
   grid-template-columns: 1fr, 1fr;
-  grid-gap: 10px;
+  grid-gap: 3px;
+  text-align: left;
+}
+.type, .model, .desc, .price, .count, .order {
+  display: block;
+}
+/*КАРТИНКА ВЕРХНЕГО ГРИДА*/
+.grid_1 img{
+  height: 355px;
+  margin: 15px 0 0 0;
+}
+/*КНОПКА ЗАКАЗ*/
+.grid_1 .add{
+  width: 148px;
+  height: 39px;
+  background-color: #4D92CB;
+  border: 1px solid #4D92CB;
+  border-radius:5px;
+  color: #fff;
+  font-size: 12px;
+  margin: 25px 0 7px 0;
 }
 
+/* НИЖНИЙ ГРИД корзина*/
+.grid_2  .header h2{  
+ margin: 20px 0 10px 0 ;
+ padding: 20px 0 10px 0;
+ font-weight: 100;
+ font-size: 21px;
+ letter-spacing: 0.07em;
+}
 .grid_2  {  
  text-align: center;
- padding: auto;
-
- 
+ margin: auto auto 65px auto;
+ padding: 0;
+ display: grid;
+ grid-template-rows: 1fr;
+ box-shadow: 0 5px 22px  #E0E0E0;
+ width: 648px;
 }
 .card_order , .header, .footer{
-   margin: auto;
-   margin: auto;
-    width: 900px;
-    background-color: pink;
+  background-color: #FFFFFF;
 }
-.card_order {  
- 
- display: flex;
+/*ФЛЕКС ДЛЯ ИНФЫ О КАЖДОЙ ПОЗИЦИИ ЗАКАЗА*/
+.card_order {
+  margin: 0 20px;   
+  border-top: 1px solid #E0E0E0;
+  padding: 15px 0 15px 9px ;
+  text-align: left;
+  display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
+  position: relative;
+  font-size: 10px; 
+}
+.card_order>div{
+ margin: 0 17px 0 0;
+}
+.card_order:nth-child(3) {   
+ border-top: none;
 }
 .card_order img{  
-float: left;
-height: 50px;
-width: auto;
+  float: left;
+  height: 70px;
+  width: auto;
 }
-    
+.card_order_name{
+  text-align: left;
+  padding-left:  0;
+  font-size: 11px;
+  margin-left: 0;
+}  
+.card_order_name span{
+  text-align: left;
+  padding-left:  0;   
+  margin-left: 0;
+  float: left;
+}  
+.card_order_name .h4{
+  font-size: 10px; 
+  font-weight: 800;
+  color:#454D54;
+}
+.card_order_count {
+ position: absolute;
+ right: 44%;
+}    
+.card_order_price {
+ position: absolute;
+ right: 15%;
+ font-size: 12px; 
+}   
+/*КНОПКА УДАЛЕНИЯ ИЗ ЗАКАЗА*/
 .close_order{
-   background-image: url(../img/basket.png);
-   height: 35px;
-   width: 35px;
+ background-image: url(../img/basket.png);
+ height: 26px;
+ width: 26px;
+ position: absolute;
+ right: 0;
+}
+/*ВЫВОД  СУММЫ*/
+#summ{
+  font-size: 17px;  
+  margin: 2px;
 }
 @media(min-width: 640px){
   .grid_1{
-grid-template-columns:2fr 2fr ;
-grid-template-areas: 
-  "header header"
-  "article aside " 
-  "footer footer"
-  /*обозначили какие области где 
-  расположились и соответственно 
-  сколько фракций они заняли
-  */  }
+    width: 880px;
+    margin:   5px auto 25px auto ;
+    grid-template-columns:2fr 2fr ;
+    grid-template-areas: 
+    "header aside "
+    "article aside " 
+    "footer footer"
+
+  }
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
 
-    }
+}
 
 
- /* Medium  */
+/* Medium  */
 @media only screen and (max-width: 768px) {
- 
-    }   
 
-    /* XS */
+}   
+
+/* XS */
 @media only screen and (max-width: 576px) {
-  
-    }   
+
+}   
