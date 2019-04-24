@@ -25,12 +25,13 @@ function showGood(){
 	// переменная атрибут артикул по его значению  определяем группы товара в селекте
 	articul = $(this).attr('data-art');
 	console.log(articul);   
+	// переменная поля моделей товара
+	var outModel ="";	
 	//  вывод моделей товара в зависимости от типа товара  
 	for (var key in data){ 
-	// переменная поля моделей товара
-	var outModel ="";
-	outImg = "";     			 
-	$.each(data, function(key, val){	 
+	 
+	$.each(data, function(key, val){	
+
 	// создаём массив названий моделей в выпападющем списке
 	let outModel = data[articul].items.map(({ name }) => name);
 	// заполняем селекты для моделей опциями значений моделей при клике на тип товара
@@ -38,6 +39,7 @@ function showGood(){
 	$.each(outModel, function(i, p) {
 	$('.model_1').append($('<option></option>').val(i).html(p));
 	});
+	
 	$('.model_1 option').on('click',showModel);   		
 	}); 
 	}
@@ -47,6 +49,7 @@ function showGood(){
 $('.model_1 option').on('click', showModel);
   outDesc ="";
   outPrice = "";
+  outImg = "";  
 function showModel(){
 // переменная атрибут артикул. по его значению  определяем модель товара в селекте
 	articul_model = $(this).attr('value');

@@ -1,0 +1,314 @@
+@charset "UTF-8";
+@import url("normalize.css");
+html {
+  font-family: sans-serif;
+  line-height: 1.23;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  background: #FFF;
+  margin: 0;
+  overflow-x: hidden;
+  position: relative; }
+
+/*ВЕРХНИЙ ГРИД. ОБЩЕЕ*/
+.grid_1 
+{  
+  display:grid;
+
+  grid-template-areas: 
+   
+  "header"  
+  "aside"
+  "article"
+  "footer"
+}
+
+header {
+  text-align: left;
+  color: #576A6A; }
+
+aside {
+  grid-area: aside;
+  padding: 0; }
+
+footer {
+  grid-area: footer;
+  text-align: center; }
+
+small, input, select {
+  color: #576A6A;
+  height: 22px;
+  -webkit-box-shadow: insert 2px 2px 5px  #E0E0E0;
+          box-shadow: insert 2px 2px 5px  #E0E0E0; }
+
+label {
+  padding-bottom: 1px;
+  margin: 0;
+  height: 17px; }
+
+label .h4 {
+  margin-top: 5px; }
+
+input {
+  width: 85px;
+  padding: 0;
+  margin: 0; }
+
+h3 {
+  font-size: 16px;
+  margin: 20px 0 10px 0;
+  font-weight: 100; }
+
+/*ЧЕРНЫЕ ЗАГОЛОВКИ*/
+.h4 {
+  font-size: 11px;
+  font-weight: 800;
+  color: #454D54;
+  margin: 11px 0 2px 0; }
+
+/*ИНФА ИЗ БАЗЫ*/
+#desc_1 {
+  padding: 2px 0 -2px 0; }
+
+#price_1 {
+  font-size: 19px; }
+
+#price_1 small {
+  font-size: 10px; }
+
+/*СУММА КРАСНЫМ ЦВЕТОМ И ЦЕНА*/
+.red {
+  color: #FF2840; }
+
+/*КЛАСС ДЛЯ ТЕНЕЙ В ИНПУТЕ И СЕЛЕКТАХ*/
+.shadow {
+  /*box-shadow: inset 2px 2px 15px  -2px #E0E0E0*/
+  /* box-shadow: inset 2px 0 4px #000*/
+  /*box-shadow: 0 1px 2px #000 inset, 0 -1px 0 #000 inset*/
+  /*box-shadow: inset 2px 0 4px #000*/
+  -webkit-box-shadow: inset 0px 0px 6px black;
+          box-shadow: inset 0px 0px 6px black;
+  /*box-shadow: 0 1px 2px rgba(0,0,0,.2) inset, 0 -1px 0 rgba(0,0,0,.05) inset*/ }
+
+.grid_1 header, article {
+  color: #576A6A;
+  padding: 0 2px  0  20px;
+  font-size: 10.5px; }
+
+.grid_1 aside, footer {
+  color: #576A6A;
+  padding: 0;
+  font-size: 10px;
+  margin: 0; }
+
+/*КОНТЕНТ ВЕРХНЕГО ГРИДА*/
+.grid_1 div.subitems {
+  display: grid;
+  grid-template-columns:   1fr;
+  grid-gap: 3px;
+  text-align: left; }
+
+.type, .model, .desc, .price, .count, .order {
+  display: block; }
+
+/*КАРТИНКА ВЕРХНЕГО ГРИДА*/
+.grid_1 img {
+  height: 355px;
+  margin: 15px 0 0 0; }
+
+/*КНОПКА ЗАКАЗ*/
+.grid_1 .add {
+  width: 148px;
+  height: 39px;
+  background-color: #4D92CB;
+  border: 1px solid #4D92CB;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  margin: 25px 0 7px 0; }
+
+/* НИЖНИЙ ГРИД корзина*/
+.grid_2 .header h2 {
+  margin: 20px 0 10px 0;
+  padding: 20px 0 10px 0;
+  font-weight: 100;
+  font-size: 21px;
+  letter-spacing: 0.07em; }
+
+.grid_2 {
+  text-align: center;
+  margin: auto auto 65px auto;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 1fr;
+  -webkit-box-shadow: 0 5px 22px  #E0E0E0;
+          box-shadow: 0 5px 22px  #E0E0E0;
+  width: 648px; }
+
+.card_order, .header, .footer {
+  background-color: #FFFFFF; }
+
+/*ФЛЕКС ДЛЯ ИНФЫ О КАЖДОЙ ПОЗИЦИИ ЗАКАЗА*/
+.card_order {
+  margin: 0 20px;
+  border-top: 1px solid #E0E0E0;
+  padding: 15px 0 15px 9px;
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  position: relative;
+  font-size: 10px; }
+
+.card_order > div {
+  margin: 0 17px 0 0; }
+
+.card_order:nth-child(3) {
+  border-top: none; }
+
+.card_order img {
+  float: left;
+  height: 70px;
+  width: auto; }
+
+.card_order_name {
+  text-align: left;
+  padding-left: 0;
+  font-size: 11px;
+  margin-left: 0; }
+
+.card_order_name span {
+  text-align: left;
+  padding-left: 0;
+  margin-left: 0;
+  float: left; }
+
+.card_order_name .h4 {
+  font-size: 10px;
+  font-weight: 800;
+  color: #454D54; }
+
+.card_order_count {
+  position: absolute;
+  right: 44%; }
+
+.card_order_price {
+  position: absolute;
+  right: 15%;
+  font-size: 12px; }
+
+/*КНОПКА УДАЛЕНИЯ ИЗ ЗАКАЗА*/
+.close_order {
+  background-image: url(../img/basket.png);
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  right: 0; }
+
+/*ВЫВОД  СУММЫ*/
+#summ {
+  font-size: 17px;
+  margin: 2px; }
+
+@media(min-width: 640px){
+  .grid_1{
+    width: 880px;
+    margin:   5px auto 25px auto ;
+    grid-template-columns:2fr 2fr ;
+    grid-template-areas: 
+    "header aside "
+    "article aside " 
+    "footer footer"
+
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+
+}
+
+
+/* Medium  */
+@media only screen and (max-width: 768px) {
+.grid_1   {
+ max-width: 100%;
+ padding-right:  10px;
+}
+.grid_1 article {
+padding-right: 20px; }
+  
+.grid_1 img {
+  height: 300px;
+   }
+.grid_2 {
+  text-align: center;
+  margin: 10px;
+  max-width: 100%; }
+.card_order img {
+  height: 50px;
+  width: auto;
+  margin-left: -20px; }  
+.card_order_count {
+  position: absolute;
+  right: 20%; }
+
+.card_order_price {
+  position: absolute;
+  right: 4%;
+  }
+}
+/* XS */
+@media only screen and (max-width: 480px) {
+.grid_1   {
+ max-width: 100%;
+ padding-right:  10px;
+}
+.grid_1 img {
+  height: 250px;
+  margin: 0; }
+  .grid_2 {  
+  margin: auto ;
+  padding: 0; 
+   max-width: 100%;
+  }
+  .card_order > div {
+  margin: 0 2px 0 0; }
+  .card_order img {
+  float: left;
+  margin-left: -20px;
+  height: 30px;
+  width: auto; }
+ .card_order_name .h4{  
+  margin-left: -3px;  
+   font-size: 9px;
+ }
+.card_order_count {
+  position: absolute;
+  right: 27%; 
+   display:  table-cell;
+   height:  33px;
+   vertical-align: top;
+   }
+
+.card_order_price {
+  position: absolute;
+  right: 7.5%;
+   display:  table-cell;
+   height:  35px;
+   vertical-align: top;
+ 
+  }
+
+}   
